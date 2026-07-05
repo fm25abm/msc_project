@@ -1,4 +1,4 @@
-# Context-Aware Vulnerability Prioritisation Engine
+# Patch Prioritisation Engine
 
 MSc Advanced Computer Science Dissertation Project
 
