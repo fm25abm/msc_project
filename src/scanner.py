@@ -25,7 +25,7 @@ def run_scan(project_path, output_file):
         with open(output_file, "w") as file:
             subprocess.run(command, stdout=file)
 
-        print(f"Scan completed successfully.")
+        print(f"Scan completed successfully.\n Results saved to {output_file}")
         return True
 
     except Exception as error:

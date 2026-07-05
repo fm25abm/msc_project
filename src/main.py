@@ -10,16 +10,20 @@ Future versions will also call the parser, EPSS, KEV and prioritisation modules.
 """
 
 from scanner import run_scan
+from parser import load_results
 
 def main():
 
-    project_path = "test-projects/python/flask-demo"
-    output_file = "output/results.json"
+    project = "test-projects/python/flask-demo"
+    output = "output/results.json"
 
-    success = run_scan(project_path, output_file)
+    success = run_scan(project, output)
 
     if success:
-        print("Results saved to:", output_file)
+        results = load_results(output)
+
+        if results is not None:
+            print("Results loaded successfully")
 
 
 if __name__ == "__main__":
