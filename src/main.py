@@ -11,25 +11,22 @@ Future versions will also call the parser, EPSS, KEV and prioritisation modules.
 
 from scanner import run_scan
 from parser import load_results, extract_vulnerabilities
+from report import generate_report
 
 def main():
 
     project = "test-projects/python/flask-demo"
     output = "output/results.json"
 
-    success = run_scan(project, output)
-
-    if success:
+    if run_scan(project, output):
         results = load_results(output)
 
-        if results is not None:
+        if results:
             print("Results loaded successfully")
-            
+
             vulnerabilities = extract_vulnerabilities(results)
-            print("\nDetected Vulnerabilities:\n")
             
-            for vulnerability in vulnerabilities:
-                print(vulnerability)
+            generate_report(vulnerabilities)
 
 
 if __name__ == "__main__":

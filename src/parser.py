@@ -6,7 +6,7 @@ It loads the JSON data and returns it to the main application for further proces
 Parameters:
         file_path (str): Path to the JSON results file.
 
-Returns the parsed JSON data if successful, otherwise None.
+Returns the parsed JSON data if successful.
 """
 
 import json
