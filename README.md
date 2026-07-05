@@ -18,11 +18,11 @@ The implementation uses Google's OSV-Scanner as the vulnerability discovery engi
 ## Repository Structure
 
 ```
-docs/            Project documentation
-src/             Source code
 datasets/        Evaluation datasets
+docs/            Project documentation
 evaluation/      Experimental results
 output/          Generated reports
+src/             Source code
 test-projects/   Sample vulnerable projects
 tests/           Unit tests
 ```
