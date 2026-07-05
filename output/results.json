@@ -2,7 +2,7 @@
   "results": [
     {
       "source": {
-        "path": "C:/Users/Faraaz/Documents/msc_project/test/requirements.txt",
+        "path": "C:/Users/Faraaz/Documents/msc_project/test-projects/python/flasks-demo/requirements.txt",
         "type": "lockfile"
       },
       "packages": [
