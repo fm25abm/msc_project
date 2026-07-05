@@ -22,3 +22,35 @@ def load_results(file_path):
     except Exception as error:
         print(f"An unexpected error occurred: {error}")
         return None
+
+
+"""
+Vulnerability Extraction Function
+Extracts basic vulnerability information from the JSON report.
+
+Parameters:
+    data (dict): Parsed JSON data.
+
+Returns:
+    list: A list containing vulnerability information.
+"""
+def extract_vulnerabilities(data):
+
+    vulnerabilities = []
+
+    for result in data["results"]:
+
+        for package in result["packages"]:
+
+            package_name = package["package"]["name"]
+            package_version = package["package"]["version"]
+
+            for vulnerability in package["vulnerabilities"]:
+
+                vulnerabilities.append({
+                    "package": package_name,
+                    "version": package_version,
+                    "id": vulnerability["id"]
+                })
+
+    return vulnerabilities

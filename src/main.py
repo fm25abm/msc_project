@@ -10,7 +10,7 @@ Future versions will also call the parser, EPSS, KEV and prioritisation modules.
 """
 
 from scanner import run_scan
-from parser import load_results
+from parser import load_results, extract_vulnerabilities
 
 def main():
 
@@ -24,6 +24,12 @@ def main():
 
         if results is not None:
             print("Results loaded successfully")
+            
+            vulnerabilities = extract_vulnerabilities(results)
+            print("\nDetected Vulnerabilities:\n")
+            
+            for vulnerability in vulnerabilities:
+                print(vulnerability)
 
 
 if __name__ == "__main__":
