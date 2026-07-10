@@ -25,7 +25,7 @@ def generate_report(vulnerabilities):
         if key not in grouped:
             grouped[key] = []
 
-        grouped[key].append(item["id"])
+        grouped[key].append(item)
 
     # Print report
     print("\n" + "=" * 50)
