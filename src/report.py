@@ -12,7 +12,9 @@ def generate_report(vulnerabilities):
         vulnerabilities (list): List of dictionaries containing:
             - package (str)
             - version (str)
-            - id (str)
+            - osv_id (str)
+            - cve (str)
+            - epss (float)
     """
 
     grouped = {}
@@ -39,6 +41,15 @@ def generate_report(vulnerabilities):
         print("-" * 20)
 
         for v in vulns:
-            print(v)
+            print(f"OSV ID : {v['osv_id']}")
+            print(f"CVE    : {v['cve']}")
+
+            if v["epss"] is not None:
+                print(f"EPSS   : {v['epss']:.4f}")
+            
+            else:
+                print("EPSS   : N/A")
+
+            print()
 
         print("\n" + "=" * 50)

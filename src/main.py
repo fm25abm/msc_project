@@ -12,6 +12,7 @@ Future versions will also call the parser, EPSS, KEV and prioritisation modules.
 from scanner import run_scan
 from parser import load_results, extract_vulnerabilities
 from report import generate_report
+from epss import get_epss_score
 
 def main():
 
@@ -25,6 +26,9 @@ def main():
             print("Results loaded successfully")
 
             vulnerabilities = extract_vulnerabilities(results)
+
+            for vulnerability in vulnerabilities:
+                vulnerability["epss"] = get_epss_score(vulnerability["cve"])
             
             generate_report(vulnerabilities)
 
