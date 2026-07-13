@@ -15,6 +15,7 @@ def generate_report(vulnerabilities):
             - osv_id (str)
             - cve (str)
             - epss (float)
+            - kev (bool) 
     """
 
     grouped = {}
@@ -49,7 +50,13 @@ def generate_report(vulnerabilities):
             
             else:
                 print("EPSS   : N/A")
-
+            
+            if v["kev"]:
+                print("KEV    : Yes")
+            
+            else:
+                print("KEV    : No")
+            
             print()
 
         print("\n" + "=" * 50)

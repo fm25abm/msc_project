@@ -13,6 +13,7 @@ from scanner import run_scan
 from parser import load_results, extract_vulnerabilities
 from report import generate_report
 from epss import get_epss_score
+from kev import is_known_exploited
 
 def main():
 
@@ -30,6 +31,9 @@ def main():
             for vulnerability in vulnerabilities:
                 vulnerability["epss"] = get_epss_score(vulnerability["cve"])
             
+            for vulnerability in vulnerabilities:
+                vulnerability["kev"] = is_known_exploited(vulnerability["cve"])
+                
             generate_report(vulnerabilities)
 
 
