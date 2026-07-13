@@ -11,11 +11,7 @@ Returns:
 import json
 import urllib.request
 
-
-def is_known_exploited(cve):
-
-    if cve is None:
-        return False
+def load_kev_catalog():
 
     url = "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
 
@@ -25,7 +21,23 @@ def is_known_exploited(cve):
 
         data = json.loads(response.read())
 
-        for vulnerability in data["vulnerabilities"]:
+        return data["vulnerabilities"]
+
+    except Exception:
+
+        return []
+
+
+def is_known_exploited(cve, kev_catalog):
+
+    if cve is None:
+        return False
+
+    url = "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+
+    try:
+
+        for vulnerability in kev_catalog:
 
             if vulnerability["cveID"] == cve:
                 return True
@@ -34,7 +46,3 @@ def is_known_exploited(cve):
 
     except Exception:
         return False
-
-
-if __name__ == "__main__":
-    main()
