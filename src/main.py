@@ -18,6 +18,7 @@ from parser import load_results, extract_vulnerabilities
 from report import generate_report
 from epss import get_epss_score
 from kev import is_known_exploited, load_kev_catalog
+from prioritiser import assign_priority
 
 def main():
 
@@ -37,6 +38,8 @@ def main():
                 vulnerability["epss"] = get_epss_score(vulnerability["cve"])
 
                 vulnerability["kev"] = is_known_exploited(vulnerability["cve"], kev_catalog)
+
+                vulnerability["priority"] = assign_priority(vulnerability)
 
             generate_report(vulnerabilities)
 

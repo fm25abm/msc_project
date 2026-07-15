@@ -22,12 +22,3 @@ def assign_priority(vulnerability):
     
     else:
         return "Low"
-
-if __name__ == "__main__":
-
-    vulnerability = {
-        "epss": 0.82,
-        "kev": False
-    }
-
-    print(assign_priority(vulnerability))
