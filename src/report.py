@@ -15,7 +15,8 @@ def generate_report(vulnerabilities):
             - osv_id (str)
             - cve (str)
             - epss (float)
-            - kev (bool) 
+            - kev (bool)
+            - priority (str)
     """
 
     grouped = {}
@@ -56,6 +57,8 @@ def generate_report(vulnerabilities):
             
             else:
                 print("KEV    : No")
+
+            print(f"Priority : {v['priority']}")
             
             print()
 
