@@ -1,8 +1,9 @@
 """
 This script assigns priority to vulnerabilties found by the OSV scanner.
 
-The priority is based on two factors:
-- The EPSS score
+The priority is based on the following factors:
+- The CVSS score (0.0 to 10)
+- The EPSS score (0 to 1)
 - Whether it is actively exploited; through KEV
 
 Returns:
@@ -12,13 +13,28 @@ Returns:
 def assign_priority(vulnerability):
 
     if vulnerability["kev"]:
-        return "Critical"
+        vulnerability["priority"] = "Critical"
+        return vulnerability
     
-    if vulnerability["epss"] >= 0.70:
-        return "High"
+    cvss = vulnerability["cvss"]
 
-    if vulnerability["epss"] >= 0.30:
-        return "Medium"
+    if cvss is None:
+        cvss = 0
     
+    epss = vulnerability["epss"]
+
+    score = cvss + (epss * 10)
+
+    vulnerability["risk_score"] = round(score,2)
+    
+    if score >= 15:
+        vulnerability["priority"] = "Critical"
+
+    elif score >= 10:
+        vulnerability["priority"] = "High"
+    
+    elif score >= 7:
+        vulnerability["priority"] = "Medium"
+       
     else:
-        return "Low"
+        vulnerability["priority"] = "Low"

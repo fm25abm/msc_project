@@ -62,6 +62,9 @@ def generate_report(vulnerabilities):
             else:
                 print("KEV    : No")
 
+            if "risk_score" in v:
+                print(f"Risk Score : {v['risk_score']}")
+            
             print(f"Priority : {v['priority']}")
             
             print()

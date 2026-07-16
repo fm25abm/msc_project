@@ -39,8 +39,8 @@ def main():
 
                 vulnerability["kev"] = is_known_exploited(vulnerability["cve"], kev_catalog)
 
-                vulnerability["priority"] = assign_priority(vulnerability)
-
+                assign_priority(vulnerability)
+            
             generate_report(vulnerabilities)
 
 
