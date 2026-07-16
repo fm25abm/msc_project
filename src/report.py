@@ -43,8 +43,12 @@ def generate_report(vulnerabilities):
         print("-" * 20)
 
         for v in vulns:
+
             print(f"OSV ID : {v['osv_id']}")
+
             print(f"CVE    : {v['cve']}")
+
+            print(f"CVSS    : {v['cvss']}")
 
             if v["epss"] is not None:
                 print(f"EPSS   : {v['epss']:.4f}")
@@ -61,5 +65,5 @@ def generate_report(vulnerabilities):
             print(f"Priority : {v['priority']}")
             
             print()
-
+        
         print("\n" + "=" * 50)

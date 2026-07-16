@@ -10,6 +10,7 @@ Returns the parsed JSON data if successful.
 """
 
 import json
+from cvss import CVSS3
 
 def load_results(file_path):
 
@@ -23,6 +24,37 @@ def load_results(file_path):
         print(f"An unexpected error occurred: {error}")
         return None
 
+"""
+CVSS Extraction Function
+
+Extracts CVSS score from the OSV severity vector.
+
+Parameters:
+    vulnerability (dict): Vulnerability entry from the OSV JSON.
+
+Returns:
+    float: Numerical CVSS score, otherwise None.
+"""
+
+def extract_cvss_score(vulnerability):
+
+    if "severity" not in vulnerability:
+        return None
+
+    for severity in vulnerability["severity"]:
+
+        if severity["type"] == "CVSS_V3":
+            
+            vector = severity["score"]
+
+            try:
+                cvss = CVSS3(vector)
+                return cvss.scores()[0]
+
+            except Exception:
+                return None
+
+    return None
 
 """
 Vulnerability Extraction Function
@@ -56,12 +88,15 @@ def extract_vulnerabilities(data):
                     if alias.startswith("CVE-"):
                         cve=alias
                         break
+                
+                cvss = extract_cvss_score(vulnerability)
 
                 vulnerabilities.append({
                     "package": package_name,
                     "version": package_version,
                     "osv_id": vulnerability["id"],
-                    "cve": cve
+                    "cve": cve,
+                    "cvss": cvss
                 })
 
     return vulnerabilities
