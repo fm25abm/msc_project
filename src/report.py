@@ -48,7 +48,7 @@ def generate_report(vulnerabilities):
 
             print(f"CVE    : {v['cve']}")
 
-            print(f"CVSS    : {v['cvss']}")
+            print(f"CVSS   : {v['cvss']}")
 
             if v["epss"] is not None:
                 print(f"EPSS   : {v['epss']:.4f}")

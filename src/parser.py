@@ -30,7 +30,7 @@ CVSS Extraction Function
 Extracts CVSS score from the OSV severity vector.
 
 Parameters:
-    vulnerability (dict): Vulnerability entry from the OSV JSON.
+    vulnerability (dict): Vulnerability entry from the OSV JSON
 
 Returns:
     float: Numerical CVSS score, otherwise None.
@@ -44,7 +44,7 @@ def extract_cvss_score(vulnerability):
     for severity in vulnerability["severity"]:
 
         if severity["type"] == "CVSS_V3":
-            
+
             vector = severity["score"]
 
             try:
@@ -56,16 +56,18 @@ def extract_cvss_score(vulnerability):
 
     return None
 
+
 """
 Vulnerability Extraction Function
 Extracts basic vulnerability information from the JSON report.
 
 Parameters:
-    data (dict): Parsed JSON data.
+    data (dict): Parsed JSON data
 
 Returns:
     list: A list containing vulnerability information.
 """
+
 def extract_vulnerabilities(data):
 
     vulnerabilities = []
@@ -98,5 +100,20 @@ def extract_vulnerabilities(data):
                     "cve": cve,
                     "cvss": cvss
                 })
+
+                # Fill in missing CVSS scores using matching CVE records
+                for vulnerability in vulnerabilities:
+                    
+                    if vulnerability["cvss"] is None:
+
+                        for other in vulnerabilities:
+
+                            if vulnerability["cve"] == other["cve"]:
+
+                                if other["cvss"] is not None:
+
+                                    vulnerability["cvss"] = other["cvss"]
+                                    
+                                    break
 
     return vulnerabilities
