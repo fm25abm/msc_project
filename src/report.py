@@ -2,23 +2,21 @@
 This module is responsible for generating human-readable reports from extracted vulnerability data.
 
 It formats and displays vulnerability information in a structured way for easier interpretation and analysis.
+
+Prints a structured report of vulnerabilities grouped by package.
+
+Parameters:
+    vulnerabilities (list): List of dictionaries containing:
+         - package (str)
+         - version (str)
+         - osv_id (str)
+         - cve (str)
+         - epss (float)
+         - kev (bool)
+         - priority (str)
 """
 
 def generate_report(vulnerabilities):
-    """
-    Prints a structured report of vulnerabilities grouped by package.
-
-    Parameters:
-        vulnerabilities (list): List of dictionaries containing:
-            - package (str)
-            - version (str)
-            - osv_id (str)
-            - cve (str)
-            - epss (float)
-            - kev (bool)
-            - priority (str)
-    """
-
     grouped = {}
 
     # Group vulnerabilities by package
