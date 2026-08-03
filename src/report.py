@@ -26,8 +26,8 @@ def write_line(text, report_file):
 def generate_report(vulnerabilities, project):
 
     project_name = os.path.basename(os.path.dirname(project))
-    report_path = f"evaluation/results/{project_name}.txt"
-    
+    report_path = f"evaluation/results/ppe-reports/{project_name}.txt"
+
     print("Generating report...")
 
     with open(report_path, "w", encoding="utf-8") as report_file:

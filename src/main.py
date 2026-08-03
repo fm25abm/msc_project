@@ -13,6 +13,7 @@ Currently, it:
 Future versions will also invoke the prioritisation module to rank vulnerabilities based on the collected data.
 """
 
+import os
 from scanner import run_scan
 from parser import load_results, extract_vulnerabilities
 from report import generate_report
@@ -23,7 +24,8 @@ from prioritiser import assign_priority
 def main():
 
     project = "evaluation/real-world-projects/CS4300_Flask_template/requirements.txt"
-    output = "output/results.json"
+    project_name = os.path.basename(os.path.dirname(project))
+    output = f"evaluation/results/raw-osv-results/{project_name}.json"
 
     if run_scan(project, output):
         results = load_results(output)
