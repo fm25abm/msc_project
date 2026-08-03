@@ -8,9 +8,10 @@ Currently, it:
 - Loads and parses the scan results
 - Retrieves EPSS scores
 - Checks the CISA KEV catalogue
+- Assigns vulnerability priorities
 - Generates a vulnerability report
+- Assigns vulnerability priorities
 
-Future versions will also invoke the prioritisation module to rank vulnerabilities based on the collected data.
 """
 
 import os
@@ -20,12 +21,14 @@ from report import generate_report
 from epss import get_epss_score
 from kev import is_known_exploited, load_kev_catalog
 from prioritiser import assign_priority
+from exporter import export_results
 
 def main():
 
     project = "evaluation/real-world-projects/CS4300_Flask_template/requirements.txt"
     project_name = os.path.basename(os.path.dirname(project))
     output = f"evaluation/results/raw-osv-results/{project_name}.json"
+    processed_path = f"evaluation/results/processed-ppe-results/{project_name}.json"
 
     if run_scan(project, output):
         results = load_results(output)
@@ -43,6 +46,7 @@ def main():
 
                 assign_priority(vulnerability)
             
+            export_results(vulnerabilities, processed_path)
             generate_report(vulnerabilities, project)
 
 
