@@ -22,7 +22,7 @@ from prioritiser import assign_priority
 
 def main():
 
-    project = "evaluation/real-world-projects/mlh-hackathon-flask-starter/requirements.txt"
+    project = "evaluation/real-world-projects/CS4300_Flask_template/requirements.txt"
     output = "output/results.json"
 
     if run_scan(project, output):

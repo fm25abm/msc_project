@@ -15,7 +15,7 @@ from cvss import CVSS3
 def load_results(file_path):
 
     try:
-        with open(file_path, "r") as file:
+        with open(file_path, "r", encoding="utf-8") as file:
             data = json.load(file)
 
         return data
@@ -113,7 +113,7 @@ def extract_vulnerabilities(data):
                                 if other["cvss"] is not None:
 
                                     vulnerability["cvss"] = other["cvss"]
-                                    
+
                                     break
 
     return vulnerabilities

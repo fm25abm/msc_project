@@ -1,0 +1,1290 @@
+
+==================================================
+
+Package : click
+Version : 7.0
+
+Vulnerabilities
+--------------------
+OSV ID : PYSEC-2026-2132
+CVE    : CVE-2026-7246
+CVSS   : 7.2
+EPSS   : 0.0090
+KEV    : No
+Risk Score : 7.29
+Priority : Medium
+
+
+==================================================
+
+Package : flask
+Version : 1.1.1
+
+Vulnerabilities
+--------------------
+OSV ID : PYSEC-2023-62
+CVE    : CVE-2023-30861
+CVSS   : 7.5
+EPSS   : 0.0126
+KEV    : No
+Risk Score : 7.63
+Priority : Medium
+
+OSV ID : PYSEC-2026-2151
+CVE    : CVE-2026-27205
+CVSS   : 4.3
+EPSS   : 0.0034
+KEV    : No
+Risk Score : 4.33
+Priority : Low
+
+OSV ID : GHSA-68rp-wp8r-4726
+CVE    : CVE-2026-27205
+CVSS   : 4.3
+EPSS   : 0.0034
+KEV    : No
+Risk Score : 4.33
+Priority : Low
+
+OSV ID : GHSA-m2qf-hxjv-5gpq
+CVE    : CVE-2023-30861
+CVSS   : 7.5
+EPSS   : 0.0126
+KEV    : No
+Risk Score : 7.63
+Priority : Medium
+
+
+==================================================
+
+Package : flask-httpauth
+Version : 3.3.0
+
+Vulnerabilities
+--------------------
+OSV ID : PYSEC-2026-2152
+CVE    : CVE-2026-34531
+CVSS   : 8.2
+EPSS   : 0.0032
+KEV    : No
+Risk Score : 8.23
+Priority : Medium
+
+OSV ID : GHSA-p44q-vqpr-4xmg
+CVE    : CVE-2026-34531
+CVSS   : 6.5
+EPSS   : 0.0032
+KEV    : No
+Risk Score : 6.53
+Priority : Low
+
+
+==================================================
+
+Package : jinja2
+Version : 2.11.3
+
+Vulnerabilities
+--------------------
+OSV ID : PYSEC-2026-1471
+CVE    : CVE-2025-27516
+CVSS   : None
+EPSS   : 0.0050
+KEV    : No
+Risk Score : 0.05
+Priority : Low
+
+OSV ID : PYSEC-2026-1473
+CVE    : CVE-2024-22195
+CVSS   : 5.4
+EPSS   : 0.0089
+KEV    : No
+Risk Score : 5.49
+Priority : Low
+
+OSV ID : PYSEC-2026-1474
+CVE    : CVE-2024-34064
+CVSS   : 5.4
+EPSS   : 0.0098
+KEV    : No
+Risk Score : 5.5
+Priority : Low
+
+OSV ID : PYSEC-2026-1475
+CVE    : CVE-2024-56326
+CVSS   : 7.8
+EPSS   : 0.0052
+KEV    : No
+Risk Score : 7.85
+Priority : Medium
+
+OSV ID : GHSA-cpwx-vrp4-4pq7
+CVE    : CVE-2025-27516
+CVSS   : None
+EPSS   : 0.0050
+KEV    : No
+Risk Score : 0.05
+Priority : Low
+
+OSV ID : GHSA-h5c8-rqwp-cp95
+CVE    : CVE-2024-22195
+CVSS   : 5.4
+EPSS   : 0.0089
+KEV    : No
+Risk Score : 5.49
+Priority : Low
+
+OSV ID : GHSA-h75v-3vvj-5mfj
+CVE    : CVE-2024-34064
+CVSS   : 5.4
+EPSS   : 0.0098
+KEV    : No
+Risk Score : 5.5
+Priority : Low
+
+OSV ID : GHSA-q2x7-8rv6-6q7h
+CVE    : CVE-2024-56326
+CVSS   : 7.8
+EPSS   : 0.0052
+KEV    : No
+Risk Score : 7.85
+Priority : Medium
+
+
+==================================================
+
+Package : mako
+Version : 1.1.1
+
+Vulnerabilities
+--------------------
+OSV ID : PYSEC-2022-260
+CVE    : CVE-2022-40023
+CVSS   : 7.5
+EPSS   : 0.0172
+KEV    : No
+Risk Score : 7.67
+Priority : Medium
+
+OSV ID : PYSEC-2026-2617
+CVE    : CVE-2026-44307
+CVSS   : None
+EPSS   : 0.0061
+KEV    : No
+Risk Score : 0.06
+Priority : Low
+
+OSV ID : PYSEC-2026-88
+CVE    : CVE-2026-41205
+CVSS   : 7.5
+EPSS   : 0.0036
+KEV    : No
+Risk Score : 7.54
+Priority : Medium
+
+OSV ID : GHSA-2h4p-vjrc-8xpq
+CVE    : CVE-2026-44307
+CVSS   : None
+EPSS   : 0.0061
+KEV    : No
+Risk Score : 0.06
+Priority : Low
+
+OSV ID : GHSA-v92g-xgxw-vvmm
+CVE    : CVE-2026-41205
+CVSS   : 7.5
+EPSS   : 0.0036
+KEV    : No
+Risk Score : 7.54
+Priority : Medium
+
+OSV ID : GHSA-v973-fxgf-6xhp
+CVE    : CVE-2022-40023
+CVSS   : 7.5
+EPSS   : 0.0172
+KEV    : No
+Risk Score : 7.67
+Priority : Medium
+
+
+==================================================
+
+Package : pyjwt
+Version : 1.4.0
+
+Vulnerabilities
+--------------------
+OSV ID : PYSEC-2017-24
+CVE    : CVE-2017-11424
+CVSS   : 7.5
+EPSS   : 0.0180
+KEV    : No
+Risk Score : 7.68
+Priority : Medium
+
+OSV ID : PYSEC-2025-183
+CVE    : CVE-2025-45768
+CVSS   : 7.0
+EPSS   : 0.0016
+KEV    : No
+Risk Score : 7.02
+Priority : Medium
+
+OSV ID : PYSEC-2026-120
+CVE    : CVE-2026-32597
+CVSS   : 7.5
+EPSS   : 0.0027
+KEV    : No
+Risk Score : 7.53
+Priority : Medium
+
+OSV ID : PYSEC-2026-175
+CVE    : CVE-2026-48522
+CVSS   : 4.2
+EPSS   : 0.0022
+KEV    : No
+Risk Score : 4.22
+Priority : Low
+
+OSV ID : PYSEC-2026-177
+CVE    : CVE-2026-48524
+CVSS   : 3.7
+EPSS   : 0.0034
+KEV    : No
+Risk Score : 3.73
+Priority : Low
+
+OSV ID : PYSEC-2026-179
+CVE    : CVE-2026-48526
+CVSS   : 7.4
+EPSS   : 0.0040
+KEV    : No
+Risk Score : 7.44
+Priority : Medium
+
+OSV ID : GHSA-752w-5fwx-jx9f
+CVE    : CVE-2026-32597
+CVSS   : 7.5
+EPSS   : 0.0027
+KEV    : No
+Risk Score : 7.53
+Priority : Medium
+
+OSV ID : GHSA-r9jw-mwhq-wp62
+CVE    : CVE-2017-11424
+CVSS   : 7.5
+EPSS   : 0.0180
+KEV    : No
+Risk Score : 7.68
+Priority : Medium
+
+OSV ID : GHSA-xgmm-8j9v-c9wx
+CVE    : CVE-2026-48526
+CVSS   : 7.4
+EPSS   : 0.0040
+KEV    : No
+Risk Score : 7.44
+Priority : Medium
+
+
+==================================================
+
+Package : werkzeug
+Version : 0.16.1
+
+Vulnerabilities
+--------------------
+OSV ID : PYSEC-2022-203
+CVE    : CVE-2022-29361
+CVSS   : None
+EPSS   : 0.0817
+KEV    : No
+Risk Score : 0.82
+Priority : Low
+
+OSV ID : PYSEC-2023-221
+CVE    : CVE-2023-46136
+CVSS   : 7.5
+EPSS   : 0.0107
+KEV    : No
+Risk Score : 7.61
+Priority : Medium
+
+OSV ID : PYSEC-2023-57
+CVE    : CVE-2023-23934
+CVSS   : 2.6
+EPSS   : 0.0051
+KEV    : No
+Risk Score : 2.65
+Priority : Low
+
+OSV ID : PYSEC-2023-58
+CVE    : CVE-2023-25577
+CVSS   : 7.5
+EPSS   : 0.0142
+KEV    : No
+Risk Score : 7.64
+Priority : Medium
+
+OSV ID : PYSEC-2026-2043
+CVE    : CVE-2024-34069
+CVSS   : 7.5
+EPSS   : 0.0340
+KEV    : No
+Risk Score : 7.84
+Priority : Medium
+
+OSV ID : PYSEC-2026-2044
+CVE    : CVE-2026-21860
+CVSS   : 5.3
+EPSS   : 0.0042
+KEV    : No
+Risk Score : 5.34
+Priority : Low
+
+OSV ID : PYSEC-2026-2045
+CVE    : CVE-2024-49766
+CVSS   : None
+EPSS   : 0.0077
+KEV    : No
+Risk Score : 0.08
+Priority : Low
+
+OSV ID : PYSEC-2026-2046
+CVE    : CVE-2025-66221
+CVSS   : None
+EPSS   : 0.0052
+KEV    : No
+Risk Score : 0.05
+Priority : Low
+
+OSV ID : PYSEC-2026-2320
+CVE    : CVE-2026-27199
+CVSS   : 5.3
+EPSS   : 0.0056
+KEV    : No
+Risk Score : 5.36
+Priority : Low
+
+OSV ID : GHSA-29vq-49wr-vm6x
+CVE    : CVE-2026-27199
+CVSS   : 5.3
+EPSS   : 0.0056
+KEV    : No
+Risk Score : 5.36
+Priority : Low
+
+OSV ID : GHSA-2g68-c3qc-8985
+CVE    : CVE-2024-34069
+CVSS   : 7.5
+EPSS   : 0.0340
+KEV    : No
+Risk Score : 7.84
+Priority : Medium
+
+OSV ID : GHSA-87hc-h4r5-73f7
+CVE    : CVE-2026-21860
+CVSS   : 5.3
+EPSS   : 0.0042
+KEV    : No
+Risk Score : 5.34
+Priority : Low
+
+OSV ID : GHSA-f9vj-2wh5-fj8j
+CVE    : CVE-2024-49766
+CVSS   : None
+EPSS   : 0.0077
+KEV    : No
+Risk Score : 0.08
+Priority : Low
+
+OSV ID : GHSA-hgf8-39gv-g3f2
+CVE    : CVE-2025-66221
+CVSS   : None
+EPSS   : 0.0052
+KEV    : No
+Risk Score : 0.05
+Priority : Low
+
+OSV ID : GHSA-px8h-6qxv-m22q
+CVE    : CVE-2023-23934
+CVSS   : 2.6
+EPSS   : 0.0051
+KEV    : No
+Risk Score : 2.65
+Priority : Low
+
+OSV ID : GHSA-xg9f-g7g7-2323
+CVE    : CVE-2023-25577
+CVSS   : 7.5
+EPSS   : 0.0142
+KEV    : No
+Risk Score : 7.64
+Priority : Medium
+
+
+==================================================
+
+Package : certifi
+Version : 2019.11.28
+
+Vulnerabilities
+--------------------
+OSV ID : PYSEC-2022-42986
+CVE    : CVE-2022-23491
+CVSS   : 6.8
+EPSS   : 0.0053
+KEV    : No
+Risk Score : 6.85
+Priority : Low
+
+OSV ID : PYSEC-2023-135
+CVE    : CVE-2023-37920
+CVSS   : 7.5
+EPSS   : 0.0056
+KEV    : No
+Risk Score : 7.56
+Priority : Medium
+
+OSV ID : PYSEC-2024-230
+CVE    : CVE-2024-39689
+CVSS   : 7.5
+EPSS   : 0.0105
+KEV    : No
+Risk Score : 7.6
+Priority : Medium
+
+OSV ID : GHSA-43fp-rhv2-5gv8
+CVE    : CVE-2022-23491
+CVSS   : 6.8
+EPSS   : 0.0053
+KEV    : No
+Risk Score : 6.85
+Priority : Low
+
+OSV ID : GHSA-xqr8-7jwr-rhp7
+CVE    : CVE-2023-37920
+CVSS   : 7.5
+EPSS   : 0.0056
+KEV    : No
+Risk Score : 7.56
+Priority : Medium
+
+
+==================================================
+
+Package : gevent
+Version : 1.4.0
+
+Vulnerabilities
+--------------------
+OSV ID : PYSEC-2023-177
+CVE    : CVE-2023-41419
+CVSS   : 9.8
+EPSS   : 0.0135
+KEV    : No
+Risk Score : 9.93
+Priority : Medium
+
+OSV ID : GHSA-x7m3-jprg-wc5g
+CVE    : CVE-2023-41419
+CVSS   : 9.8
+EPSS   : 0.0135
+KEV    : No
+Risk Score : 9.93
+Priority : Medium
+
+
+==================================================
+
+Package : gunicorn
+Version : 20.0.4
+
+Vulnerabilities
+--------------------
+OSV ID : PYSEC-2026-1433
+CVE    : CVE-2024-6827
+CVSS   : 7.5
+EPSS   : 0.0074
+KEV    : No
+Risk Score : 7.57
+Priority : Medium
+
+OSV ID : PYSEC-2026-1434
+CVE    : CVE-2024-1135
+CVSS   : 8.2
+EPSS   : 0.0300
+KEV    : No
+Risk Score : 8.5
+Priority : Medium
+
+OSV ID : GHSA-hc5x-x2vx-497g
+CVE    : CVE-2024-6827
+CVSS   : 7.5
+EPSS   : 0.0074
+KEV    : No
+Risk Score : 7.57
+Priority : Medium
+
+OSV ID : GHSA-w3h3-4rj7-4ph4
+CVE    : CVE-2024-1135
+CVSS   : 8.2
+EPSS   : 0.0300
+KEV    : No
+Risk Score : 8.5
+Priority : Medium
+
+
+==================================================
+
+Package : idna
+Version : 2.9
+
+Vulnerabilities
+--------------------
+OSV ID : PYSEC-2024-60
+CVE    : CVE-2024-3651
+CVSS   : 7.5
+EPSS   : 0.0139
+KEV    : No
+Risk Score : 7.64
+Priority : Medium
+
+OSV ID : PYSEC-2026-215
+CVE    : CVE-2026-45409
+CVSS   : 5.3
+EPSS   : 0.0041
+KEV    : No
+Risk Score : 5.34
+Priority : Low
+
+OSV ID : GHSA-65pc-fj4g-8rjx
+CVE    : CVE-2026-45409
+CVSS   : 5.3
+EPSS   : 0.0041
+KEV    : No
+Risk Score : 5.34
+Priority : Low
+
+OSV ID : GHSA-jjg7-2v4v-x38h
+CVE    : CVE-2024-3651
+CVSS   : 6.2
+EPSS   : 0.0139
+KEV    : No
+Risk Score : 6.34
+Priority : Low
+
+
+==================================================
+
+Package : joblib
+Version : 0.14.1
+
+Vulnerabilities
+--------------------
+OSV ID : PYSEC-2022-288
+CVE    : CVE-2022-21797
+CVSS   : 9.8
+EPSS   : 0.0208
+KEV    : No
+Risk Score : 10.01
+Priority : High
+
+OSV ID : GHSA-6hrg-qmvc-2xh8
+CVE    : CVE-2022-21797
+CVSS   : 9.8
+EPSS   : 0.0208
+KEV    : No
+Risk Score : 10.01
+Priority : High
+
+
+==================================================
+
+Package : marshmallow
+Version : 3.5.0
+
+Vulnerabilities
+--------------------
+OSV ID : PYSEC-2026-1605
+CVE    : CVE-2025-68480
+CVSS   : 5.3
+EPSS   : 0.0026
+KEV    : No
+Risk Score : 5.33
+Priority : Low
+
+OSV ID : GHSA-428g-f7cq-pgp5
+CVE    : CVE-2025-68480
+CVSS   : 5.3
+EPSS   : 0.0026
+KEV    : No
+Risk Score : 5.33
+Priority : Low
+
+
+==================================================
+
+Package : nltk
+Version : 3.4.5
+
+Vulnerabilities
+--------------------
+OSV ID : PYSEC-2021-356
+CVE    : CVE-2021-3828
+CVSS   : 7.5
+EPSS   : 0.0170
+KEV    : No
+Risk Score : 7.67
+Priority : Medium
+
+OSV ID : PYSEC-2021-859
+CVE    : CVE-2021-43854
+CVSS   : 7.5
+EPSS   : 0.0267
+KEV    : No
+Risk Score : 7.77
+Priority : Medium
+
+OSV ID : PYSEC-2022-5
+CVE    : CVE-2021-3842
+CVSS   : 7.5
+EPSS   : 0.0146
+KEV    : No
+Risk Score : 7.65
+Priority : Medium
+
+OSV ID : PYSEC-2024-167
+CVE    : CVE-2024-39705
+CVSS   : 7.5
+EPSS   : 0.0135
+KEV    : No
+Risk Score : 7.63
+Priority : Medium
+
+OSV ID : PYSEC-2026-2078
+CVE    : CVE-2026-54293
+CVSS   : 7.5
+EPSS   : 0.0056
+KEV    : No
+Risk Score : 7.56
+Priority : Medium
+
+OSV ID : PYSEC-2026-2085
+CVE    : CVE-2026-12252
+CVSS   : 7.8
+EPSS   : 0.0019
+KEV    : No
+Risk Score : 7.82
+Priority : Medium
+
+OSV ID : PYSEC-2026-2235
+CVE    : CVE-2026-33230
+CVSS   : 6.1
+EPSS   : 0.0033
+KEV    : No
+Risk Score : 6.13
+Priority : Low
+
+OSV ID : PYSEC-2026-2236
+CVE    : CVE-2026-33231
+CVSS   : 7.5
+EPSS   : 0.0088
+KEV    : No
+Risk Score : 7.59
+Priority : Medium
+
+OSV ID : PYSEC-2026-2237
+CVE    : CVE-2026-33236
+CVSS   : 8.1
+EPSS   : 0.0057
+KEV    : No
+Risk Score : 8.16
+Priority : Medium
+
+OSV ID : PYSEC-2026-597
+CVE    : CVE-2026-12243
+CVSS   : 7.5
+EPSS   : 0.0058
+KEV    : No
+Risk Score : 7.56
+Priority : Medium
+
+OSV ID : PYSEC-2026-96
+CVE    : CVE-2025-14009
+CVSS   : 10.0
+EPSS   : 0.0079
+KEV    : No
+Risk Score : 10.08
+Priority : High
+
+OSV ID : PYSEC-2026-97
+CVE    : CVE-2026-0846
+CVSS   : 7.5
+EPSS   : 0.0043
+KEV    : No
+Risk Score : 7.54
+Priority : Medium
+
+OSV ID : PYSEC-2026-98
+CVE    : CVE-2026-0847
+CVSS   : 7.5
+EPSS   : 0.0090
+KEV    : No
+Risk Score : 7.59
+Priority : Medium
+
+OSV ID : PYSEC-2026-99
+CVE    : CVE-2026-0848
+CVSS   : 10.0
+EPSS   : 0.0081
+KEV    : No
+Risk Score : 10.08
+Priority : High
+
+OSV ID : GHSA-2ww3-fxvq-293j
+CVE    : CVE-2021-3828
+CVSS   : 7.5
+EPSS   : 0.0170
+KEV    : No
+Risk Score : 7.67
+Priority : Medium
+
+OSV ID : GHSA-469j-vmhf-r6v7
+CVE    : CVE-2026-33236
+CVSS   : 8.1
+EPSS   : 0.0057
+KEV    : No
+Risk Score : 8.16
+Priority : Medium
+
+OSV ID : GHSA-68j8-pq59-fqgm
+CVE    : CVE-2026-0847
+CVSS   : 8.6
+EPSS   : 0.0090
+KEV    : No
+Risk Score : 8.69
+Priority : Medium
+
+OSV ID : GHSA-6hm5-jgcp-p838
+CVE    : CVE-2026-12072
+CVSS   : 7.5
+EPSS   : N/A
+KEV    : No
+Risk Score : 7.5
+Priority : Medium
+
+OSV ID : GHSA-7p94-766c-hgjp
+CVE    : CVE-2025-14009
+CVSS   : 10.0
+EPSS   : 0.0079
+KEV    : No
+Risk Score : 10.08
+Priority : High
+
+OSV ID : GHSA-cgvx-9447-vcch
+CVE    : CVE-2024-39705
+CVSS   : 7.5
+EPSS   : 0.0135
+KEV    : No
+Risk Score : 7.63
+Priority : Medium
+
+OSV ID : GHSA-f8m6-h2c7-8h9x
+CVE    : CVE-2021-43854
+CVSS   : 7.5
+EPSS   : 0.0267
+KEV    : No
+Risk Score : 7.77
+Priority : Medium
+
+OSV ID : GHSA-fg7f-2386-8897
+CVE    : CVE-2026-12061
+CVSS   : 7.5
+EPSS   : N/A
+KEV    : No
+Risk Score : 7.5
+Priority : Medium
+
+OSV ID : GHSA-gfwx-w7gr-fvh7
+CVE    : CVE-2026-33230
+CVSS   : 6.1
+EPSS   : 0.0033
+KEV    : No
+Risk Score : 6.13
+Priority : Low
+
+OSV ID : GHSA-h8wq-7xc4-p3qx
+CVE    : CVE-2026-0846
+CVSS   : 8.6
+EPSS   : 0.0043
+KEV    : No
+Risk Score : 8.64
+Priority : Medium
+
+OSV ID : GHSA-jm6w-m3j8-898g
+CVE    : CVE-2026-33231
+CVSS   : 7.5
+EPSS   : 0.0088
+KEV    : No
+Risk Score : 7.59
+Priority : Medium
+
+OSV ID : GHSA-p4gq-832x-fm9v
+CVE    : CVE-2026-54293
+CVSS   : 7.5
+EPSS   : 0.0056
+KEV    : No
+Risk Score : 7.56
+Priority : Medium
+
+OSV ID : GHSA-qvv7-cg9c-w4x3
+CVE    : CVE-2026-12075
+CVSS   : 8.6
+EPSS   : N/A
+KEV    : No
+Risk Score : 8.6
+Priority : Medium
+
+OSV ID : GHSA-rf74-v2fm-23pw
+CVE    : None
+CVSS   : None
+EPSS   : N/A
+KEV    : No
+Risk Score : 0
+Priority : Low
+
+OSV ID : GHSA-rqjh-jp2r-59cj
+CVE    : CVE-2021-3842
+CVSS   : 7.5
+EPSS   : 0.0146
+KEV    : No
+Risk Score : 7.65
+Priority : Medium
+
+OSV ID : GHSA-xh95-f55m-82fw
+CVE    : CVE-2026-12074
+CVSS   : 7.5
+EPSS   : N/A
+KEV    : No
+Risk Score : 7.5
+Priority : Medium
+
+
+==================================================
+
+Package : numpy
+Version : 1.18.1
+
+Vulnerabilities
+--------------------
+OSV ID : PYSEC-2021-856
+CVE    : CVE-2021-41495
+CVSS   : 7.5
+EPSS   : 0.0115
+KEV    : No
+Risk Score : 7.62
+Priority : Medium
+
+OSV ID : PYSEC-2021-857
+CVE    : CVE-2021-41496
+CVSS   : 5.5
+EPSS   : 0.0037
+KEV    : No
+Risk Score : 5.54
+Priority : Low
+
+OSV ID : GHSA-5545-2q6w-2gh6
+CVE    : CVE-2021-41495
+CVSS   : 7.5
+EPSS   : 0.0115
+KEV    : No
+Risk Score : 7.62
+Priority : Medium
+
+OSV ID : GHSA-6p56-wp2h-9hxr
+CVE    : CVE-2021-33430
+CVSS   : 5.3
+EPSS   : 0.0107
+KEV    : No
+Risk Score : 5.41
+Priority : Low
+
+OSV ID : GHSA-f7c7-j99h-c22f
+CVE    : CVE-2021-41496
+CVSS   : 5.5
+EPSS   : 0.0037
+KEV    : No
+Risk Score : 5.54
+Priority : Low
+
+OSV ID : GHSA-fpfv-jqm9-f5jm
+CVE    : CVE-2021-34141
+CVSS   : 5.3
+EPSS   : 0.0156
+KEV    : No
+Risk Score : 5.46
+Priority : Low
+
+
+==================================================
+
+Package : python-engineio
+Version : 3.11.2
+
+Vulnerabilities
+--------------------
+OSV ID : PYSEC-2026-3032
+CVE    : CVE-2026-48802
+CVSS   : 7.5
+EPSS   : N/A
+KEV    : No
+Risk Score : 7.5
+Priority : Medium
+
+OSV ID : PYSEC-2026-3033
+CVE    : CVE-2026-48809
+CVSS   : 7.5
+EPSS   : N/A
+KEV    : No
+Risk Score : 7.5
+Priority : Medium
+
+OSV ID : GHSA-cgwc-pv48-fhj5
+CVE    : CVE-2026-48802
+CVSS   : 7.5
+EPSS   : N/A
+KEV    : No
+Risk Score : 7.5
+Priority : Medium
+
+OSV ID : GHSA-m9gh-vj53-gvh9
+CVE    : CVE-2026-48809
+CVSS   : 7.5
+EPSS   : N/A
+KEV    : No
+Risk Score : 7.5
+Priority : Medium
+
+
+==================================================
+
+Package : python-socketio
+Version : 4.4.0
+
+Vulnerabilities
+--------------------
+OSV ID : PYSEC-2026-1854
+CVE    : CVE-2025-61765
+CVSS   : 6.4
+EPSS   : 0.0045
+KEV    : No
+Risk Score : 6.44
+Priority : Low
+
+OSV ID : PYSEC-2026-3042
+CVE    : CVE-2026-48804
+CVSS   : 7.5
+EPSS   : N/A
+KEV    : No
+Risk Score : 7.5
+Priority : Medium
+
+OSV ID : GHSA-5w7q-77mv-v69f
+CVE    : CVE-2026-48804
+CVSS   : 7.5
+EPSS   : N/A
+KEV    : No
+Risk Score : 7.5
+Priority : Medium
+
+OSV ID : GHSA-g8c6-8fjj-2r4m
+CVE    : CVE-2025-61765
+CVSS   : 6.4
+EPSS   : 0.0045
+KEV    : No
+Risk Score : 6.44
+Priority : Low
+
+
+==================================================
+
+Package : requests
+Version : 2.23.0
+
+Vulnerabilities
+--------------------
+OSV ID : PYSEC-2023-74
+CVE    : CVE-2023-32681
+CVSS   : 6.1
+EPSS   : 0.0297
+KEV    : No
+Risk Score : 6.4
+Priority : Low
+
+OSV ID : PYSEC-2026-1872
+CVE    : CVE-2024-47081
+CVSS   : 5.3
+EPSS   : 0.0084
+KEV    : No
+Risk Score : 5.38
+Priority : Low
+
+OSV ID : PYSEC-2026-1873
+CVE    : CVE-2024-35195
+CVSS   : 5.6
+EPSS   : 0.0034
+KEV    : No
+Risk Score : 5.63
+Priority : Low
+
+OSV ID : PYSEC-2026-2275
+CVE    : CVE-2026-25645
+CVSS   : 5.5
+EPSS   : 0.0018
+KEV    : No
+Risk Score : 5.52
+Priority : Low
+
+OSV ID : GHSA-9hjg-9r4m-mvj7
+CVE    : CVE-2024-47081
+CVSS   : 5.3
+EPSS   : 0.0084
+KEV    : No
+Risk Score : 5.38
+Priority : Low
+
+OSV ID : GHSA-9wx4-h78v-vm56
+CVE    : CVE-2024-35195
+CVSS   : 5.6
+EPSS   : 0.0034
+KEV    : No
+Risk Score : 5.63
+Priority : Low
+
+OSV ID : GHSA-gc5v-m9x4-r6x2
+CVE    : CVE-2026-25645
+CVSS   : 4.4
+EPSS   : 0.0018
+KEV    : No
+Risk Score : 4.42
+Priority : Low
+
+OSV ID : GHSA-j8r2-6x86-q33q
+CVE    : CVE-2023-32681
+CVSS   : 6.1
+EPSS   : 0.0297
+KEV    : No
+Risk Score : 6.4
+Priority : Low
+
+
+==================================================
+
+Package : scikit-learn
+Version : 0.22.1
+
+Vulnerabilities
+--------------------
+OSV ID : PYSEC-2020-107
+CVE    : CVE-2020-13092
+CVSS   : 9.8
+EPSS   : 0.0265
+KEV    : No
+Risk Score : 10.06
+Priority : High
+
+OSV ID : PYSEC-2020-108
+CVE    : CVE-2020-28975
+CVSS   : None
+EPSS   : 0.0343
+KEV    : No
+Risk Score : 0.34
+Priority : Low
+
+OSV ID : PYSEC-2024-110
+CVE    : CVE-2024-5206
+CVSS   : 4.7
+EPSS   : 0.0019
+KEV    : No
+Risk Score : 4.72
+Priority : Low
+
+OSV ID : GHSA-jjw5-xxj6-pcv5
+CVE    : CVE-2020-13092
+CVSS   : 9.8
+EPSS   : 0.0265
+KEV    : No
+Risk Score : 10.06
+Priority : High
+
+OSV ID : GHSA-jw8x-6495-233v
+CVE    : CVE-2024-5206
+CVSS   : 5.3
+EPSS   : 0.0019
+KEV    : No
+Risk Score : 5.32
+Priority : Low
+
+
+==================================================
+
+Package : scipy
+Version : 1.4.1
+
+Vulnerabilities
+--------------------
+OSV ID : PYSEC-2023-102
+CVE    : CVE-2023-25399
+CVSS   : None
+EPSS   : 0.0038
+KEV    : No
+Risk Score : 0.04
+Priority : Low
+
+OSV ID : PYSEC-2023-114
+CVE    : CVE-2023-29824
+CVSS   : None
+EPSS   : 0.0133
+KEV    : No
+Risk Score : 0.13
+Priority : Low
+
+
+==================================================
+
+Package : urllib3
+Version : 1.26.5
+
+Vulnerabilities
+--------------------
+OSV ID : PYSEC-2023-192
+CVE    : CVE-2023-43804
+CVSS   : 8.1
+EPSS   : 0.0121
+KEV    : No
+Risk Score : 8.22
+Priority : Medium
+
+OSV ID : PYSEC-2023-212
+CVE    : CVE-2023-45803
+CVSS   : 4.2
+EPSS   : 0.0054
+KEV    : No
+Risk Score : 4.25
+Priority : Low
+
+OSV ID : PYSEC-2026-141
+CVE    : CVE-2026-44431
+CVSS   : 5.3
+EPSS   : 0.0033
+KEV    : No
+Risk Score : 5.33
+Priority : Low
+
+OSV ID : PYSEC-2026-1994
+CVE    : CVE-2025-66471
+CVSS   : None
+EPSS   : 0.0069
+KEV    : No
+Risk Score : 0.07
+Priority : Low
+
+OSV ID : PYSEC-2026-1995
+CVE    : CVE-2024-37891
+CVSS   : 4.4
+EPSS   : 0.0114
+KEV    : No
+Risk Score : 4.51
+Priority : Low
+
+OSV ID : PYSEC-2026-1996
+CVE    : CVE-2026-21441
+CVSS   : 7.5
+EPSS   : 0.0267
+KEV    : No
+Risk Score : 7.77
+Priority : Medium
+
+OSV ID : PYSEC-2026-1998
+CVE    : CVE-2025-66418
+CVSS   : None
+EPSS   : 0.0069
+KEV    : No
+Risk Score : 0.07
+Priority : Low
+
+OSV ID : PYSEC-2026-1999
+CVE    : CVE-2025-50181
+CVSS   : 5.3
+EPSS   : 0.0039
+KEV    : No
+Risk Score : 5.34
+Priority : Low
+
+OSV ID : GHSA-2xpw-w6gg-jr37
+CVE    : CVE-2025-66471
+CVSS   : None
+EPSS   : 0.0069
+KEV    : No
+Risk Score : 0.07
+Priority : Low
+
+OSV ID : GHSA-34jh-p97f-mpxf
+CVE    : CVE-2024-37891
+CVSS   : 4.4
+EPSS   : 0.0114
+KEV    : No
+Risk Score : 4.51
+Priority : Low
+
+OSV ID : GHSA-38jv-5279-wg99
+CVE    : CVE-2026-21441
+CVSS   : 7.5
+EPSS   : 0.0267
+KEV    : No
+Risk Score : 7.77
+Priority : Medium
+
+OSV ID : GHSA-g4mx-q9vg-27p4
+CVE    : CVE-2023-45803
+CVSS   : 4.2
+EPSS   : 0.0054
+KEV    : No
+Risk Score : 4.25
+Priority : Low
+
+OSV ID : GHSA-gm62-xv2j-4w53
+CVE    : CVE-2025-66418
+CVSS   : None
+EPSS   : 0.0069
+KEV    : No
+Risk Score : 0.07
+Priority : Low
+
+OSV ID : GHSA-pq67-6m6q-mj2v
+CVE    : CVE-2025-50181
+CVSS   : 5.3
+EPSS   : 0.0039
+KEV    : No
+Risk Score : 5.34
+Priority : Low
+
+OSV ID : GHSA-qccp-gfcp-xxvc
+CVE    : CVE-2026-44431
+CVSS   : 5.3
+EPSS   : 0.0033
+KEV    : No
+Risk Score : 5.33
+Priority : Low
+
+OSV ID : GHSA-v845-jxx5-vc9f
+CVE    : CVE-2023-43804
+CVSS   : 5.9
+EPSS   : 0.0121
+KEV    : No
+Risk Score : 6.02
+Priority : Low
+
+
+==================================================

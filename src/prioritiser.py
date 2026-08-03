@@ -17,11 +17,12 @@ def assign_priority(vulnerability):
         return vulnerability
     
     cvss = vulnerability["cvss"]
-
     if cvss is None:
         cvss = 0
     
     epss = vulnerability["epss"]
+    if epss is None:
+        epss = 0
 
     score = cvss + (epss * 10)
 
