@@ -22,7 +22,7 @@ from prioritiser import assign_priority
 
 def main():
 
-    project = "test-projects/python/flask-demo"
+    project = "evaluation/real-world-projects/mlh-hackathon-flask-starter/requirements.txt"
     output = "output/results.json"
 
     if run_scan(project, output):
@@ -41,7 +41,7 @@ def main():
 
                 assign_priority(vulnerability)
             
-            generate_report(vulnerabilities)
+            generate_report(vulnerabilities, project)
 
 
 if __name__ == "__main__":
