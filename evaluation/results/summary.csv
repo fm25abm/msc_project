@@ -1,5 +1,5 @@
 Repository,Packages,Vulnerabilities,Critical,High,Medium,Low,KEV,Average Risk Score
-CS4300_Flask_template,21,140,0,7,67,66,0,6.1
+CS4300_Flask_template,21,144,0,7,71,66,0,6.14
 flask-boilerplate,1,4,0,0,2,2,0,3.8
 flask-react-boilerplate,10,55,0,0,28,27,0,5.91
 mlh-hackathon-flask-starter,12,129,0,4,45,80,0,5.52

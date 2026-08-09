@@ -6,9 +6,10 @@ It reads every report in evaluation/results and produces a CSV file containing e
 
 import csv
 import os
+import json
 
-results_folder = "evaluation/results"
-summary_file = os.path.join(results_folder, "summary.csv")
+results_folder = "evaluation/results/ppe-reports"
+summary_file = os.path.join("evaluation/results", "summary.csv")
 
 
 def analyse_report(report_path):
@@ -80,8 +81,49 @@ def analyse_report(report_path):
         average_score
     ]
 
+def load_ppe_results(file_path):
 
-def main():
+    with open(file_path, "r", encoding="utf-8") as file:
+        return json.load(file)
+
+
+def deduplicate_vulnerabilities(vulnerabilities):
+
+    unique = {}
+
+    for vulnerability in vulnerabilities:
+
+        cve = vulnerability["cve"]
+
+        if cve not in unique:
+            unique[cve] = vulnerability
+
+    return list(unique.values())
+
+def create_cvss_ranking(vulnerabilities):
+
+    ranking = vulnerabilities.copy()
+
+    ranking.sort(
+        key=lambda vulnerability: vulnerability["cvss"] or 0,
+        reverse=True
+    )
+
+    return ranking
+
+
+def create_ppe_ranking(vulnerabilities):
+
+    ranking = vulnerabilities.copy()
+
+    ranking.sort(
+        key=lambda vulnerability: vulnerability["risk_score"],
+        reverse=True
+    )
+
+    return ranking
+
+def update_summary():
 
     rows = []
 
@@ -116,6 +158,33 @@ def main():
 
     print(f"Summary written to {summary_file}")
 
+def test_rankings():
 
+    file_path = (
+        "evaluation/results/processed-ppe-results/"
+        "CS4300_Flask_template.json"
+    )
+
+    vulnerabilities = load_ppe_results(file_path)
+    vulnerabilities = deduplicate_vulnerabilities(vulnerabilities)
+
+    cvss_ranking = create_cvss_ranking(vulnerabilities)
+    ppe_ranking = create_ppe_ranking(vulnerabilities)
+
+    print("\nTop 5 CVSS vulnerabilities:")
+
+    for vulnerability in cvss_ranking[:5]:
+        print(
+            vulnerability["cve"],
+            vulnerability["cvss"]
+        )
+
+    print("\nTop 5 PPE vulnerabilities:")
+
+    for vulnerability in ppe_ranking[:5]:
+        print(
+            vulnerability["cve"],
+            vulnerability["risk_score"]
+        )
 if __name__ == "__main__":
-    main()
+    test_rankings()

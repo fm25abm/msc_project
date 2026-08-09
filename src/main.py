@@ -22,6 +22,7 @@ from epss import get_epss_score
 from kev import is_known_exploited, load_kev_catalog
 from prioritiser import assign_priority
 from exporter import export_results
+from evaluation import update_summary
 
 def main():
 
@@ -48,6 +49,7 @@ def main():
             
             export_results(vulnerabilities, processed_path)
             generate_report(vulnerabilities, project)
+            update_summary()
 
 
 if __name__ == "__main__":
