@@ -10163,10 +10163,24 @@
             },
             {
               "ids": [
-                "PYSEC-2026-597"
+                "PYSEC-2026-3657",
+                "GHSA-848c-c2cx-j7qx"
+              ],
+              "aliases": [
+                "CVE-2025-71408",
+                "GHSA-848c-c2cx-j7qx",
+                "PYSEC-2026-3657"
+              ],
+              "max_severity": "8.5"
+            },
+            {
+              "ids": [
+                "PYSEC-2026-597",
+                "GHSA-m42h-3232-vpv3"
               ],
               "aliases": [
                 "CVE-2026-12243",
+                "GHSA-m42h-3232-vpv3",
                 "PYSEC-2026-597"
               ],
               "max_severity": "7.5"
@@ -11886,6 +11900,136 @@
               "affected": [
                 {
                   "database_specific": {
+                    "source": "https://github.com/pypa/advisory-database/blob/main/vulns/nltk/PYSEC-2026-3657.yaml"
+                  },
+                  "ecosystem_specific": {},
+                  "package": {
+                    "ecosystem": "PyPI",
+                    "name": "nltk",
+                    "purl": "pkg:pypi/nltk"
+                  },
+                  "ranges": [
+                    {
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "3.9.3"
+                        }
+                      ],
+                      "type": "ECOSYSTEM"
+                    }
+                  ],
+                  "versions": [
+                    "0.8",
+                    "0.9",
+                    "0.9.3",
+                    "0.9.4",
+                    "0.9.5",
+                    "0.9.6",
+                    "0.9.7",
+                    "0.9.8",
+                    "0.9.9",
+                    "2.0.1",
+                    "2.0.1rc1",
+                    "2.0.1rc2-git",
+                    "2.0.1rc3",
+                    "2.0.1rc4",
+                    "2.0.2",
+                    "2.0.3",
+                    "2.0.4",
+                    "2.0.5",
+                    "2.0b4",
+                    "2.0b5",
+                    "2.0b6",
+                    "2.0b7",
+                    "2.0b8",
+                    "2.0b9",
+                    "3.0.0",
+                    "3.0.0b1",
+                    "3.0.0b2",
+                    "3.0.1",
+                    "3.0.2",
+                    "3.0.3",
+                    "3.0.4",
+                    "3.0.5",
+                    "3.1",
+                    "3.2",
+                    "3.2.1",
+                    "3.2.2",
+                    "3.2.3",
+                    "3.2.4",
+                    "3.2.5",
+                    "3.3",
+                    "3.4",
+                    "3.4.1",
+                    "3.4.2",
+                    "3.4.3",
+                    "3.4.4",
+                    "3.4.5",
+                    "3.5",
+                    "3.5b1",
+                    "3.6",
+                    "3.6.1",
+                    "3.6.2",
+                    "3.6.3",
+                    "3.6.4",
+                    "3.6.5",
+                    "3.6.6",
+                    "3.6.7",
+                    "3.7",
+                    "3.8",
+                    "3.8.1",
+                    "3.9",
+                    "3.9.1",
+                    "3.9.2",
+                    "3.9b1"
+                  ]
+                }
+              ],
+              "aliases": [
+                "CVE-2025-71408",
+                "GHSA-848c-c2cx-j7qx"
+              ],
+              "details": "NLTK (Natural Language Toolkit) before version 3.9.3 contains an eval injection vulnerability in the nltk.collocations module that allows an attacker who controls command-line arguments to execute arbitrary Python code. When collocations.py is invoked directly, the __main__ block passes command-line arguments directly to eval() as suffixes of BigramAssocMeasures without allowlist validation or sanitization, enabling an attacker to supply a Python expression that escapes the intended attribute lookup and executes arbitrary code including OS commands via the os module.",
+              "id": "PYSEC-2026-3657",
+              "modified": "2026-08-12T19:59:11.940439452Z",
+              "published": "2026-07-24T22:16:50.063Z",
+              "references": [
+                {
+                  "type": "ADVISORY",
+                  "url": "https://github.com/nltk/nltk/releases/tag/3.9.3"
+                },
+                {
+                  "type": "FIX",
+                  "url": "https://github.com/nltk/nltk/commit/66f14096d952ec8f04934f515e027534bd4eb0ac"
+                },
+                {
+                  "type": "FIX",
+                  "url": "https://github.com/nltk/nltk/pull/3465"
+                },
+                {
+                  "type": "FIX",
+                  "url": "https://www.vulncheck.com/advisories/nltk-eval-injection-via-collocations-py-command-line-arguments"
+                },
+                {
+                  "type": "EVIDENCE",
+                  "url": "https://aydinnyunus.github.io/2026/06/07/command-injection-nltk-collocations-eval/"
+                }
+              ],
+              "schema_version": "1.9.0",
+              "severity": [
+                {
+                  "score": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+                  "type": "CVSS_V4"
+                }
+              ]
+            },
+            {
+              "affected": [
+                {
+                  "database_specific": {
                     "source": "https://github.com/pypa/advisory-database/blob/main/vulns/nltk/PYSEC-2026-597.yaml"
                   },
                   "ecosystem_specific": {},
@@ -11977,11 +12121,12 @@
                 }
               ],
               "aliases": [
-                "CVE-2026-12243"
+                "CVE-2026-12243",
+                "GHSA-m42h-3232-vpv3"
               ],
               "details": "NLTK version 3.9.4 is vulnerable to a path traversal attack due to an incomplete fix for GitHub Issue #3504. The `_UNSAFE_NO_PROTOCOL_RE` regex in `nltk/data.py` checks for literal `../` sequences but fails to account for percent-encoded traversal sequences such as `..%2f`. The `url2pathname()` function decodes these sequences after the validation step, allowing an attacker to bypass the protection. This vulnerability enables an attacker to read arbitrary files accessible to the Python process by controlling the resource name parameter passed to `nltk.data.load()` or `nltk.data.find()`. The issue affects applications that rely on NLTK for resource loading, including NLP web applications, Jupyter notebooks, and CLI tools. The default `pathsec.ENFORCE=False` setting exacerbates the impact by not blocking the file read at the `open()` stage.",
               "id": "PYSEC-2026-597",
-              "modified": "2026-07-01T18:15:06.027046365Z",
+              "modified": "2026-08-13T21:10:37.370031268Z",
               "published": "2026-06-30T01:16:29.063Z",
               "references": [
                 {
@@ -13163,6 +13308,161 @@
               "affected": [
                 {
                   "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2026/07/GHSA-848c-c2cx-j7qx/GHSA-848c-c2cx-j7qx.json"
+                  },
+                  "package": {
+                    "ecosystem": "PyPI",
+                    "name": "nltk",
+                    "purl": "pkg:pypi/nltk"
+                  },
+                  "ranges": [
+                    {
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "3.9.3"
+                        }
+                      ],
+                      "type": "ECOSYSTEM"
+                    }
+                  ],
+                  "versions": [
+                    "0.8",
+                    "0.9",
+                    "0.9.3",
+                    "0.9.4",
+                    "0.9.5",
+                    "0.9.6",
+                    "0.9.7",
+                    "0.9.8",
+                    "0.9.9",
+                    "2.0.1",
+                    "2.0.1rc1",
+                    "2.0.1rc2-git",
+                    "2.0.1rc3",
+                    "2.0.1rc4",
+                    "2.0.2",
+                    "2.0.3",
+                    "2.0.4",
+                    "2.0.5",
+                    "2.0b4",
+                    "2.0b5",
+                    "2.0b6",
+                    "2.0b7",
+                    "2.0b8",
+                    "2.0b9",
+                    "3.0.0",
+                    "3.0.0b1",
+                    "3.0.0b2",
+                    "3.0.1",
+                    "3.0.2",
+                    "3.0.3",
+                    "3.0.4",
+                    "3.0.5",
+                    "3.1",
+                    "3.2",
+                    "3.2.1",
+                    "3.2.2",
+                    "3.2.3",
+                    "3.2.4",
+                    "3.2.5",
+                    "3.3",
+                    "3.4",
+                    "3.4.1",
+                    "3.4.2",
+                    "3.4.3",
+                    "3.4.4",
+                    "3.4.5",
+                    "3.5",
+                    "3.5b1",
+                    "3.6",
+                    "3.6.1",
+                    "3.6.2",
+                    "3.6.3",
+                    "3.6.4",
+                    "3.6.5",
+                    "3.6.6",
+                    "3.6.7",
+                    "3.7",
+                    "3.8",
+                    "3.8.1",
+                    "3.9",
+                    "3.9.1",
+                    "3.9.2",
+                    "3.9b1"
+                  ]
+                }
+              ],
+              "aliases": [
+                "CVE-2025-71408",
+                "PYSEC-2026-3657"
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-95"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2026-08-12T19:30:21Z",
+                "nvd_published_at": "2026-07-24T22:16:50Z",
+                "severity": "HIGH"
+              },
+              "details": "NLTK (Natural Language Toolkit) before version 3.9.3 contains an eval injection vulnerability in the nltk.collocations module that allows an attacker who controls command-line arguments to execute arbitrary Python code. When collocations.py is invoked directly, the __main__ block passes command-line arguments directly to eval() as suffixes of BigramAssocMeasures without allowlist validation or sanitization, enabling an attacker to supply a Python expression that escapes the intended attribute lookup and executes arbitrary code including OS commands via the os module.",
+              "id": "GHSA-848c-c2cx-j7qx",
+              "modified": "2026-08-12T19:59:11.940439452Z",
+              "published": "2026-07-25T00:31:47Z",
+              "references": [
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-71408"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/nltk/nltk/pull/3465"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/nltk/nltk/commit/66f14096d952ec8f04934f515e027534bd4eb0ac"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://aydinnyunus.github.io/2026/06/07/command-injection-nltk-collocations-eval"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/nltk/nltk"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/nltk/nltk/releases/tag/3.9.3"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/pypa/advisory-database/tree/main/vulns/nltk/PYSEC-2026-3657.yaml"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://www.vulncheck.com/advisories/nltk-eval-injection-via-collocations-py-command-line-arguments"
+                }
+              ],
+              "schema_version": "1.9.0",
+              "severity": [
+                {
+                  "score": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+                  "type": "CVSS_V3"
+                },
+                {
+                  "score": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+                  "type": "CVSS_V4"
+                }
+              ],
+              "summary": "NLTK vulnerable to Eval Injection via collocations CLI arguments"
+            },
+            {
+              "affected": [
+                {
+                  "database_specific": {
                     "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/06/GHSA-cgvx-9447-vcch/GHSA-cgvx-9447-vcch.json"
                   },
                   "package": {
@@ -14012,6 +14312,163 @@
                 }
               ],
               "summary": "Unauthenticated remote shutdown in nltk.app.wordnet_app"
+            },
+            {
+              "affected": [
+                {
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2026/08/GHSA-m42h-3232-vpv3/GHSA-m42h-3232-vpv3.json"
+                  },
+                  "package": {
+                    "ecosystem": "PyPI",
+                    "name": "nltk",
+                    "purl": "pkg:pypi/nltk"
+                  },
+                  "ranges": [
+                    {
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "3.10.0"
+                        }
+                      ],
+                      "type": "ECOSYSTEM"
+                    }
+                  ],
+                  "versions": [
+                    "0.8",
+                    "0.9",
+                    "0.9.3",
+                    "0.9.4",
+                    "0.9.5",
+                    "0.9.6",
+                    "0.9.7",
+                    "0.9.8",
+                    "0.9.9",
+                    "2.0.1",
+                    "2.0.1rc1",
+                    "2.0.1rc2-git",
+                    "2.0.1rc3",
+                    "2.0.1rc4",
+                    "2.0.2",
+                    "2.0.3",
+                    "2.0.4",
+                    "2.0.5",
+                    "2.0b4",
+                    "2.0b5",
+                    "2.0b6",
+                    "2.0b7",
+                    "2.0b8",
+                    "2.0b9",
+                    "3.0.0",
+                    "3.0.0b1",
+                    "3.0.0b2",
+                    "3.0.1",
+                    "3.0.2",
+                    "3.0.3",
+                    "3.0.4",
+                    "3.0.5",
+                    "3.1",
+                    "3.2",
+                    "3.2.1",
+                    "3.2.2",
+                    "3.2.3",
+                    "3.2.4",
+                    "3.2.5",
+                    "3.3",
+                    "3.4",
+                    "3.4.1",
+                    "3.4.2",
+                    "3.4.3",
+                    "3.4.4",
+                    "3.4.5",
+                    "3.5",
+                    "3.5b1",
+                    "3.6",
+                    "3.6.1",
+                    "3.6.2",
+                    "3.6.3",
+                    "3.6.4",
+                    "3.6.5",
+                    "3.6.6",
+                    "3.6.7",
+                    "3.7",
+                    "3.8",
+                    "3.8.1",
+                    "3.9",
+                    "3.9.1",
+                    "3.9.2",
+                    "3.9.3",
+                    "3.9.4",
+                    "3.9b1"
+                  ]
+                }
+              ],
+              "aliases": [
+                "CVE-2026-12243",
+                "PYSEC-2026-597"
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-22"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2026-08-13T20:45:05Z",
+                "nvd_published_at": null,
+                "severity": "HIGH"
+              },
+              "details": "# Summary\nnltk.data.load() and nltk.data.find() resolve user-supplied resource names to filesystem paths using url2pathname(), which decodes percent-encoded sequences (e.g. %2e%2e to ..). Path safety checks are performed on the raw, still-encoded string before decoding occurs. An attacker supplying %2e%2e instead of .. bypasses all path validation and reads arbitrary files outside the NLTK data directory.\n\n# Vulnerable Code\nnltk/data.py - find() function:\n url2pathname() decodes %2e%2e -\u003e .. AFTER any safety check\np = os.path.join(path_, url2pathname(resource_name))\nif os.path.exists(p):\n    return FileSystemPathPointer(p)\n\n# Proof of Concept\nimport nltk.data\nnltk.data.path = [\"/home/user/nltk_data\"]\n%2e%2e decodes to .. via url2pathname(), escaping the data dir\ndata = nltk.data.load(\"%2e%2e/SECRET_credentials.txt\", format=\"raw\")\nprint(data)\n b'AWS_SECRET_KEY=AKIAIOSFODNN7EXAMPLE\\nDATABASE_PASS=hunter2\\n'\nAll of these bypass path checks and decode identically:\n\n# Payload\tAfter url2pathname()\n%2e%2e/secret\t../secret\n.%2e/secret\t../secret\n%2e./secret\t../secret\n%2E%2E/secret\t../secret\nRoot Cause\nurl2pathname() is called after path safety checks, not before. Encoding .. as %2e%2e passes every check, then decodes to a traversal sequence at filesystem access time.\n\n# Fix\nDecode before checking:\n\nfrom urllib.parse import unquote\nresource_name = unquote(resource_name)  # decode first, then validate\n\n# Impact\nAn attacker who controls the resource name passed to nltk.data.load() can read any file the process has permission to access - credentials, environment files, SSH private keys, /etc/passwd, /proc/self/environ, application config files, etc. This affects any application that passes user-controlled input to nltk.data.load() or nltk.data.find().",
+              "id": "GHSA-m42h-3232-vpv3",
+              "modified": "2026-08-13T21:10:37.370031268Z",
+              "published": "2026-08-13T20:45:05Z",
+              "references": [
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/nltk/nltk/security/advisories/GHSA-m42h-3232-vpv3"
+                },
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-12243"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/nltk/nltk/issues/3504"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/nltk/nltk/pull/3522"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/nltk/nltk/commit/aec4fce1b84ad725b8975f7365b23a4f626572a9"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/nltk/nltk"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/pypa/advisory-database/tree/main/vulns/nltk/PYSEC-2026-597.yaml"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://huntr.com/bounties/39aa9354-54ca-4e77-96da-580eb1fe6ed1"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://securityinfinity.com/research/path-traversal-in-nltks-nltk-data-load-via-percent-encoded-sequences"
+                }
+              ],
+              "schema_version": "1.9.0",
+              "severity": [
+                {
+                  "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                  "type": "CVSS_V3"
+                }
+              ],
+              "summary": "nltk: Arbitrary File Read via Path Traversal in nltk.data.load() through Percent-Encoded Sequences"
             },
             {
               "affected": [

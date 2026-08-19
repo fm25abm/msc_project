@@ -7,6 +7,8 @@ It reads every report in evaluation/results and produces a CSV file containing e
 import csv
 import os
 import json
+import math
+from scipy.stats import spearmanr
 
 results_folder = "evaluation/results/ppe-reports"
 summary_file = os.path.join("evaluation/results", "summary.csv")
@@ -111,7 +113,6 @@ def create_cvss_ranking(vulnerabilities):
 
     return ranking
 
-
 def create_ppe_ranking(vulnerabilities):
 
     ranking = vulnerabilities.copy()
@@ -122,6 +123,218 @@ def create_ppe_ranking(vulnerabilities):
     )
 
     return ranking
+
+
+def compare_rankings(vulnerabilities):
+
+    cvss_ranking = create_cvss_ranking(vulnerabilities)
+    ppe_ranking = create_ppe_ranking(vulnerabilities)
+
+    cvss_ranks = {}
+
+    for rank, vulnerability in enumerate(cvss_ranking, start=1):
+        cvss_ranks[vulnerability["cve"]] = rank
+
+    comparison = []
+
+    for rank, vulnerability in enumerate(ppe_ranking, start=1):
+
+        comparison.append({
+            "cve": vulnerability["cve"],
+            "cvss_rank": cvss_ranks[vulnerability["cve"]],
+            "ppe_rank": rank
+        })
+
+    return comparison
+
+def calculate_top_n_overlap(vulnerabilities, n):
+
+    if len(vulnerabilities) < n:
+        return None
+
+    cvss_ranking = create_cvss_ranking(vulnerabilities)
+    ppe_ranking = create_ppe_ranking(vulnerabilities)
+
+    cvss_top_n = set(
+        vulnerability["cve"]
+        for vulnerability in cvss_ranking[:n]
+    )
+
+    ppe_top_n = set(
+        vulnerability["cve"]
+        for vulnerability in ppe_ranking[:n]
+    )
+
+    overlap = cvss_top_n.intersection(ppe_top_n)
+
+    return len(overlap)
+
+def evaluate_top_n():
+
+    results_folder = "evaluation/results/processed-ppe-results"
+
+    for file in os.listdir(results_folder):
+
+        if not file.endswith(".json"):
+            continue
+
+        file_path = os.path.join(results_folder, file)
+
+        vulnerabilities = load_ppe_results(file_path)
+        vulnerabilities = deduplicate_vulnerabilities(vulnerabilities)
+
+        top_5 = calculate_top_n_overlap(vulnerabilities, 5)
+        top_10 = calculate_top_n_overlap(vulnerabilities, 10)
+        top_20 = calculate_top_n_overlap(vulnerabilities, 20)
+
+        repository = file.replace(".json", "")
+
+        print(
+            f"{repository}: "
+            f"Top-5 = {top_5}/5, "
+            f"Top-10 = {top_10}/10, "
+            f"Top-20 = {top_20}/20"
+        )
+
+def evaluate_repositories():
+
+    results_folder = "evaluation/results/processed-ppe-results"
+
+    for file in os.listdir(results_folder):
+
+        if not file.endswith(".json"):
+            continue
+
+        file_path = os.path.join(results_folder, file)
+
+        vulnerabilities = load_ppe_results(file_path)
+        vulnerabilities = deduplicate_vulnerabilities(vulnerabilities)
+
+        overlap = calculate_top_n_overlap(vulnerabilities)
+
+        repository = file.replace(".json", "")
+
+        print(f"{repository}: {overlap}/10")
+
+def calculate_rank_changes(vulnerabilities):
+
+    comparisons = compare_rankings(vulnerabilities)
+
+    for vulnerability in comparisons:
+        vulnerability["rank_change"] = (
+            vulnerability["cvss_rank"] - vulnerability["ppe_rank"]
+        )
+
+    return comparisons
+
+def calculate_mean_rank_change(vulnerabilities):
+
+    comparisons = calculate_rank_changes(vulnerabilities)
+
+    changes = []
+
+    for vulnerability in comparisons:
+        changes.append(abs(vulnerability["rank_change"]))
+
+    if changes:
+        return round(sum(changes) / len(changes), 2)
+
+    return 0
+
+def calculate_spearman(vulnerabilities):
+
+    cvss_values = [
+        vulnerability["cvss"] or 0
+        for vulnerability in vulnerabilities
+    ]
+
+    ppe_values = [
+        vulnerability["risk_score"]
+        for vulnerability in vulnerabilities
+    ]
+
+    correlation, p_value = spearmanr(cvss_values, ppe_values)
+
+    if math.isnan(correlation):
+        return None
+
+    return round(correlation, 3)
+
+def evaluate_spearman():
+
+    results_folder = "evaluation/results/processed-ppe-results"
+
+    for file in os.listdir(results_folder):
+
+        if not file.endswith(".json"):
+            continue
+
+        file_path = os.path.join(results_folder, file)
+
+        vulnerabilities = load_ppe_results(file_path)
+        vulnerabilities = deduplicate_vulnerabilities(vulnerabilities)
+
+        correlation = calculate_spearman(vulnerabilities)
+
+        repository = file.replace(".json", "")
+
+        print(
+            f"{repository}: "
+            f"Spearman correlation = {correlation}"
+        )
+
+def evaluate_priority_distribution():
+
+    results_folder = "evaluation/results/processed-ppe-results"
+
+    for file in os.listdir(results_folder):
+
+        if not file.endswith(".json"):
+            continue
+
+        file_path = os.path.join(results_folder, file)
+
+        vulnerabilities = load_ppe_results(file_path)
+        vulnerabilities = deduplicate_vulnerabilities(vulnerabilities)
+
+        cvss_priority = {
+            "Critical": 0,
+            "High": 0,
+            "Medium": 0,
+            "Low": 0
+        }
+
+        ppe_priority = {
+            "Critical": 0,
+            "High": 0,
+            "Medium": 0,
+            "Low": 0
+        }
+
+        for vulnerability in vulnerabilities:
+
+            cvss = vulnerability["cvss"]
+
+            if cvss is None:
+                cvss_level = "Low"
+            elif cvss >= 9:
+                cvss_level = "Critical"
+            elif cvss >= 7:
+                cvss_level = "High"
+            elif cvss >= 4:
+                cvss_level = "Medium"
+            else:
+                cvss_level = "Low"
+
+            cvss_priority[cvss_level] += 1
+
+            ppe_priority[vulnerability["priority"]] += 1
+
+        repository = file.replace(".json", "")
+
+        print(f"\n{repository}")
+        print("CVSS:", cvss_priority)
+        print("PPE :", ppe_priority)
 
 def update_summary():
 
@@ -158,33 +371,155 @@ def update_summary():
 
     print(f"Summary written to {summary_file}")
 
-def test_rankings():
+def evaluate_rank_changes():
 
-    file_path = (
-        "evaluation/results/processed-ppe-results/"
-        "CS4300_Flask_template.json"
-    )
+    results_folder = "evaluation/results/processed-ppe-results"
 
-    vulnerabilities = load_ppe_results(file_path)
-    vulnerabilities = deduplicate_vulnerabilities(vulnerabilities)
+    for file in os.listdir(results_folder):
 
-    cvss_ranking = create_cvss_ranking(vulnerabilities)
-    ppe_ranking = create_ppe_ranking(vulnerabilities)
+        if not file.endswith(".json"):
+            continue
 
-    print("\nTop 5 CVSS vulnerabilities:")
+        file_path = os.path.join(results_folder, file)
 
-    for vulnerability in cvss_ranking[:5]:
-        print(
-            vulnerability["cve"],
-            vulnerability["cvss"]
-        )
+        vulnerabilities = load_ppe_results(file_path)
+        vulnerabilities = deduplicate_vulnerabilities(vulnerabilities)
 
-    print("\nTop 5 PPE vulnerabilities:")
+        mean_change = calculate_mean_rank_change(vulnerabilities)
 
-    for vulnerability in ppe_ranking[:5]:
-        print(
-            vulnerability["cve"],
-            vulnerability["risk_score"]
-        )
-if __name__ == "__main__":
-    test_rankings()
+        repository = file.replace(".json", "")
+
+        print(f"{repository}: Mean rank change = {mean_change}")
+
+def get_cvss_priority(cvss):
+
+    if cvss is None:
+        return "Low"
+
+    if cvss >= 9:
+        return "Critical"
+
+    elif cvss >= 7:
+        return "High"
+
+    elif cvss >= 4:
+        return "Medium"
+
+    else:
+        return "Low"
+    
+def save_evaluation_results():
+
+    results_folder = "evaluation/results/processed-ppe-results"
+    output_file = "evaluation/results/summary.csv"
+
+    rows = []
+
+    for file in os.listdir(results_folder):
+
+        if not file.endswith(".json"):
+            continue
+
+        file_path = os.path.join(results_folder, file)
+
+        vulnerabilities = load_ppe_results(file_path)
+        vulnerabilities = deduplicate_vulnerabilities(vulnerabilities)
+
+        top_5 = calculate_top_n_overlap(vulnerabilities, 5)
+        top_10 = calculate_top_n_overlap(vulnerabilities, 10)
+        top_20 = calculate_top_n_overlap(vulnerabilities, 20)
+
+        spearman = calculate_spearman(vulnerabilities)
+        mean_rank_change = calculate_mean_rank_change(vulnerabilities)
+
+        cvss_critical = 0
+        cvss_high = 0
+        cvss_medium = 0
+        cvss_low = 0
+
+        ppe_critical = 0
+        ppe_high = 0
+        ppe_medium = 0
+        ppe_low = 0
+
+        for vulnerability in vulnerabilities:
+
+            cvss_priority = get_cvss_priority(
+                vulnerability["cvss"]
+            )
+
+            ppe_priority = vulnerability["priority"]
+
+            if cvss_priority == "Critical":
+                cvss_critical += 1
+            elif cvss_priority == "High":
+                cvss_high += 1
+            elif cvss_priority == "Medium":
+                cvss_medium += 1
+            else:
+                cvss_low += 1
+
+            if ppe_priority == "Critical":
+                ppe_critical += 1
+            elif ppe_priority == "High":
+                ppe_high += 1
+            elif ppe_priority == "Medium":
+                ppe_medium += 1
+            else:
+                ppe_low += 1
+
+        repository = file.replace(".json", "")
+
+        rows.append([
+            repository,
+            len(vulnerabilities),
+
+            top_5,
+            top_10,
+            top_20,
+
+            spearman,
+            mean_rank_change,
+
+            cvss_critical,
+            cvss_high,
+            cvss_medium,
+            cvss_low,
+
+            ppe_critical,
+            ppe_high,
+            ppe_medium,
+            ppe_low
+        ])
+
+    with open(output_file, "w", newline="", encoding="utf-8") as csvfile:
+
+        writer = csv.writer(csvfile)
+
+        writer.writerow([
+            "Repository",
+            "Unique CVEs",
+
+            "Top-5 Overlap",
+            "Top-10 Overlap",
+            "Top-20 Overlap",
+
+            "Spearman Correlation",
+            "Mean Rank Change",
+
+            "CVSS Critical",
+            "CVSS High",
+            "CVSS Medium",
+            "CVSS Low",
+
+            "PPE Critical",
+            "PPE High",
+            "PPE Medium",
+            "PPE Low"
+        ])
+
+        writer.writerows(rows)
+
+    print(f"Evaluation results saved to {output_file}")
+
+save_evaluation_results()

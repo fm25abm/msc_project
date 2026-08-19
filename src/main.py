@@ -26,7 +26,7 @@ from evaluation import update_summary
 
 def main():
 
-    project = "evaluation/real-world-projects/CS4300_Flask_template/requirements.txt"
+    project = "evaluation/real-world-projects/Portfolio-Flask/requirements.txt"
     project_name = os.path.basename(os.path.dirname(project))
     output = f"evaluation/results/raw-osv-results/{project_name}.json"
     processed_path = f"evaluation/results/processed-ppe-results/{project_name}.json"

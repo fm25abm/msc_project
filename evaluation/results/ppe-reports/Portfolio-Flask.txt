@@ -113,7 +113,7 @@ Priority : Medium
 OSV ID : PYSEC-2026-2044
 CVE    : CVE-2026-21860
 CVSS   : 5.3
-EPSS   : 0.0042
+EPSS   : 0.0044
 KEV    : No
 Risk Score : 5.34
 Priority : Low
@@ -169,7 +169,7 @@ Priority : Medium
 OSV ID : GHSA-87hc-h4r5-73f7
 CVE    : CVE-2026-21860
 CVSS   : 5.3
-EPSS   : 0.0042
+EPSS   : 0.0044
 KEV    : No
 Risk Score : 5.34
 Priority : Low
@@ -257,7 +257,7 @@ Priority : Medium
 OSV ID : PYSEC-2026-2044
 CVE    : CVE-2026-21860
 CVSS   : 5.3
-EPSS   : 0.0042
+EPSS   : 0.0044
 KEV    : No
 Risk Score : 5.34
 Priority : Low
@@ -313,7 +313,7 @@ Priority : Medium
 OSV ID : GHSA-87hc-h4r5-73f7
 CVE    : CVE-2026-21860
 CVSS   : 5.3
-EPSS   : 0.0042
+EPSS   : 0.0044
 KEV    : No
 Risk Score : 5.34
 Priority : Low
@@ -577,7 +577,7 @@ Priority : Low
 OSV ID : PYSEC-2026-1996
 CVE    : CVE-2026-21441
 CVSS   : 7.5
-EPSS   : 0.0267
+EPSS   : 0.0271
 KEV    : No
 Risk Score : 7.77
 Priority : Medium
@@ -593,7 +593,7 @@ Priority : Low
 OSV ID : PYSEC-2026-1999
 CVE    : CVE-2025-50181
 CVSS   : 5.3
-EPSS   : 0.0039
+EPSS   : 0.0041
 KEV    : No
 Risk Score : 5.34
 Priority : Low
@@ -617,7 +617,7 @@ Priority : Low
 OSV ID : GHSA-38jv-5279-wg99
 CVE    : CVE-2026-21441
 CVSS   : 7.5
-EPSS   : 0.0267
+EPSS   : 0.0271
 KEV    : No
 Risk Score : 7.77
 Priority : Medium
@@ -641,7 +641,7 @@ Priority : Low
 OSV ID : GHSA-pq67-6m6q-mj2v
 CVE    : CVE-2025-50181
 CVSS   : 5.3
-EPSS   : 0.0039
+EPSS   : 0.0041
 KEV    : No
 Risk Score : 5.34
 Priority : Low
