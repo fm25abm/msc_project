@@ -1,6 +1,5 @@
 """
-This script retrieves EPSS (Exploit Prediction Scoring System) scores
-for vulnerabilities extracted from the OSV-Scanner report.
+This module retrieves EPSS (Exploit Prediction Scoring System) scores for vulnerabilities extracted from the OSV-Scanner report.
 
 Parameters:
     cve (str): CVE identifier

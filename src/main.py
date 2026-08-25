@@ -1,16 +1,14 @@
 """
-This script intializes the Patch Prioritisation Engine.
+This script initializes the Patch Prioritisation Engine.
 
-It calls all the individual modules in a specific order. 
+It calls all the individual modules in a specific order:
 
-Currently, it:
 - Runs Google OSV-Scanner
 - Loads and parses the scan results
 - Retrieves EPSS scores
 - Checks the CISA KEV catalogue
 - Assigns vulnerability priorities
 - Generates a vulnerability report
-- Assigns vulnerability priorities
 
 """
 
@@ -22,7 +20,6 @@ from epss import get_epss_score
 from kev import is_known_exploited, load_kev_catalog
 from prioritiser import assign_priority
 from exporter import export_results
-from evaluation import update_summary
 
 def main():
 
@@ -49,7 +46,6 @@ def main():
             
             export_results(vulnerabilities, processed_path)
             generate_report(vulnerabilities, project)
-            update_summary()
 
 
 if __name__ == "__main__":

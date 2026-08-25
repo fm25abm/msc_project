@@ -269,7 +269,7 @@
         "osv_id": "PYSEC-2026-2270",
         "cve": "CVE-2026-28684",
         "cvss": 6.6,
-        "epss": 0.00258,
+        "epss": 0.00252,
         "kev": false,
         "risk_score": 6.63,
         "priority": "Low"
@@ -280,7 +280,7 @@
         "osv_id": "GHSA-mf9w-mj56-hr94",
         "cve": "CVE-2026-28684",
         "cvss": 6.6,
-        "epss": 0.00258,
+        "epss": 0.00252,
         "kev": false,
         "risk_score": 6.63,
         "priority": "Low"
@@ -478,7 +478,7 @@
         "osv_id": "PYSEC-2023-212",
         "cve": "CVE-2023-45803",
         "cvss": 4.2,
-        "epss": 0.00539,
+        "epss": 0.00544,
         "kev": false,
         "risk_score": 4.25,
         "priority": "Low"
@@ -588,7 +588,7 @@
         "osv_id": "GHSA-g4mx-q9vg-27p4",
         "cve": "CVE-2023-45803",
         "cvss": 4.2,
-        "epss": 0.00539,
+        "epss": 0.00544,
         "kev": false,
         "risk_score": 4.25,
         "priority": "Low"

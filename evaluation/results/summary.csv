@@ -1,7 +1,7 @@
-Repository,Unique CVEs,Top-5 Overlap,Top-10 Overlap,Top-20 Overlap,Spearman Correlation,Mean Rank Change,CVSS Critical,CVSS High,CVSS Medium,CVSS Low,PPE Critical,PPE High,PPE Medium,PPE Low
-CS4300_Flask_template,81,5,10,15,0.974,3.63,5,40,23,13,0,4,41,36
-django.nV,27,5,9,20,0.978,0.89,4,7,9,7,1,3,7,16
-flask-boilerplate,0,,,,,,,,,,,,,,
-flask-react-boilerplate,27,4,7,20,0.973,1.48,0,14,8,5,0,0,14,13
-mlh-hackathon-flask-starter,46,3,7,19,0.976,2.52,0,18,20,8,0,1,17,28
-Portfolio-Flask,27,3,10,20,0.986,1.11,0,8,14,5,0,0,8,19
+Repository,Packages,Vulnerabilities,Critical,High,Medium,Low,KEV,Average Risk Score
+CS4300_Flask_template,21,147,0,7,74,66,0,6.18
+django.nV,1,84,2,10,22,50,0,6.8
+flask-boilerplate,0,0,0,0,0,0,0,0
+flask-react-boilerplate,10,55,0,0,28,27,0,5.92
+mlh-hackathon-flask-starter,12,129,0,4,45,80,0,5.52
+Portfolio-Flask,7,76,0,0,22,54,0,5.03

@@ -1,5 +1,5 @@
 """
-Exports processed vulnerability data to a JSON file.
+This module exports processed vulnerability data to a JSON file and saves them to processed-ppe-results.
 """
 
 import json

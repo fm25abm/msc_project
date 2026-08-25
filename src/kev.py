@@ -1,8 +1,9 @@
 """
-This script checks whether a vulnerability exists in the CISA Known Exploited Vulnerabilities catalogue.
+This module loads the CISA Known Exploited Vulnerabilities catalogue and checks whether a CVE is listed in it.
 
 Parameters:
     cve (str): CVE identifier.
+    kev_catalog (list): Vulnerabilities loaded from the CISA KEV catalogue.
 
 Returns:
     bool: True if the CVE is listed in the KEV catalogue, otherwise False.

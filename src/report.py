@@ -1,19 +1,7 @@
 """
-This module is responsible for generating human-readable reports from extracted vulnerability data.
+This module generates human-readable text reports from processed vulnerability data and saves them to the ppe-reports directory.
 
-It formats and displays vulnerability information in a structured way for easier interpretation and analysis.
-
-Prints a structured report of vulnerabilities grouped by package.
-
-Parameters:
-    vulnerabilities (list): List of dictionaries containing:
-         - package (str)
-         - version (str)
-         - osv_id (str)
-         - cve (str)
-         - epss (float)
-         - kev (bool)
-         - priority (str)
+It formats vulnerability information in a structured way, grouped by package and version, for easier interpretation and analysis.
 """
 import os
 
@@ -43,7 +31,7 @@ def generate_report(vulnerabilities, project):
 
             grouped[key].append(item)
 
-        # Print report
+        # Write report
         write_line("\n" + "=" * 50, report_file)
 
         for (package, version), vulns in grouped.items():

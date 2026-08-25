@@ -401,7 +401,7 @@ Vulnerabilities
 OSV ID : PYSEC-2026-2270
 CVE    : CVE-2026-28684
 CVSS   : 6.6
-EPSS   : 0.0026
+EPSS   : 0.0025
 KEV    : No
 Risk Score : 6.63
 Priority : Low
@@ -409,7 +409,7 @@ Priority : Low
 OSV ID : GHSA-mf9w-mj56-hr94
 CVE    : CVE-2026-28684
 CVSS   : 6.6
-EPSS   : 0.0026
+EPSS   : 0.0025
 KEV    : No
 Risk Score : 6.63
 Priority : Low

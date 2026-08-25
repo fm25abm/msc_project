@@ -1,6 +1,5 @@
 """
-This script runs Google OSV-Scanner on the specified project and saves
-the results as a JSON file.
+This script runs Google OSV-Scanner on the specified project and saves the results as a JSON file.
 
 Parameters:
     project_path (str): Path to the project to scan.

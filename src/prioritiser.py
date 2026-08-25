@@ -1,13 +1,13 @@
 """
-This script assigns priority to vulnerabilties found by the OSV scanner.
+This module assigns a priority to vulnerabilities found by the OSV-Scanner.
 
 The priority is based on the following factors:
-- The CVSS score (0.0 to 10)
+- The CVSS score (0.0 to 10.0)
 - The EPSS score (0 to 1)
-- Whether it is actively exploited through KEV
+- Whether the vulnerability is listed in the CISA KEV catalogue
 
 Returns:
-    str: Priority Level
+    dict: The vulnerability record with the calculated risk score and priority.
 """
 
 def assign_priority(vulnerability):
