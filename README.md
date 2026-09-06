@@ -4,7 +4,7 @@ MSc Advanced Computer Science Dissertation Project
 
 ## Overview
 
-The Patch Prioritisation Engine (PPE) is a Python-based vulnerability prioritisation tool developed to investigate whether combining multiple vulnerability-related signals can produce a different dependency patch prioritisation order than relying on CVSS severity alone.
+The Patch Prioritisation Engine (PPE) is a Python-based vulnerability prioritisation tool developed to investigate whether combining multiple vulnerability related signals can produce a different dependency patch prioritisation order than relying on CVSS severity alone.
 
 The engine uses Google's OSV-Scanner to identify vulnerabilities in software dependencies and enriches the results with CVSS scores, EPSS probabilities and CISA Known Exploited Vulnerabilities (KEV) information. These signals are then used to calculate a risk score and assign a patch priority.
 
@@ -39,10 +39,6 @@ For vulnerabilities not listed in KEV, priority is assigned using the calculated
 ## Repository Structure
 
 ```text
-datasets/
-    benchmark-data/       Evaluation datasets
-    sample-projects/      Sample projects
-
 docs/                     Project documentation
 
 evaluation/
