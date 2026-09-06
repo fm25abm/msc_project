@@ -10,7 +10,7 @@ The engine uses Google's OSV-Scanner to identify vulnerabilities in software dep
 
 ## Features
 
-* Scan Python and Node.js project dependencies using OSV-Scanner
+* Scan Python project dependencies using OSV-Scanner
 * Extract vulnerability and CVSS information from scanner results
 * Retrieve EPSS exploitation probabilities
 * Check vulnerabilities against the CISA KEV catalogue
